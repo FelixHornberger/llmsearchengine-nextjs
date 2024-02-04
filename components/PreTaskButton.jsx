@@ -1,13 +1,17 @@
 'use client'
-function PreTaskButton({nextPage, setArgumentsBevorTask, addTime}){
+import { usePageStore } from '@/src/pagecounter';
+
+
+
+function PreTaskButton() {
+
+    const nextPage = usePageStore((state) => state.increse);
+    //TODO: ADDTime Function
     const handleClick = () => {
-        const userArguments = document.getElementById('message-input');
-        setArgumentsBevorTask(userArguments.value);
-        addTime('preTaskTime');
-        nextPage();
+        nextPage(1);
     }
-    return(
-        <button className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3" onClick={() => handleClick(nextPage, setArgumentsBevorTask, addTime)}>Continue</button>
+    return (
+        <button className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3" onClick={() => handleClick()}>Continue</button>
     )
 }
 

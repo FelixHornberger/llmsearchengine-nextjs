@@ -1,8 +1,8 @@
 import { create } from 'zustand'
 
 interface PageState {
-    page: number
-    increse: (by: number) => void
+    page: number;
+    increse: (by: number) => void;
 }
 
 export const usePageStore = create<PageState>()((set) =>({

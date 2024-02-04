@@ -1,15 +1,17 @@
 'use client';
-import { useMessage } from '@/src/message';
+import { useMessageStore } from '@/src/message';
+import { usePageStore } from '@/src/pagecounter';
 import React from 'react'
 
+// TODO: ADD Time Zustand.
 const TaskButton = ({}) => {
 
-    const updateMessage = useMessage((state) => state.updateMessage);
-    const { messages } = useMessage();
+    const nextPage = usePageStore((state) => state.increse);
+    const { messages } = useMessageStore();
 
     const handleClick = () => {
-        //updateMessage({id:1, user:"System", content:"This is a test for updating felix"});
         console.log(messages)
+        nextPage(1);
     }
     return (
         <div className='text-center'>

@@ -10,6 +10,7 @@ import TaskButton from "./TaskButton";
 import React from "react";
 import { useMessageStore } from "@/src/message";
 import { count } from "console";
+import Loader from "./Loader";
 interface Message {
     id: number;
     message: string;
@@ -26,6 +27,7 @@ function ChatInput(){
     const addMessageZustand = useMessageStore((state) => state.addMessage) ;
     const updateMessage = useMessageStore((state) => state.updateMessage);
 
+    // TODO: Need to add a costume script for the prompts
     const generateAnswer = async (e: any, prompt: string) => {
         e.preventDefault();
         setGeneratedAnswers("");
@@ -64,7 +66,6 @@ function ChatInput(){
                 if (updateCounter === 0) {
                     addMessageZustand({id: currentID, user:"System", content: update_string as string})
                 } else {
-                    
                     /* console.log("I should update");
                     console.log(`My Id is: ${currentID}, user is System, content is: ${generatedAnswers}`); */
                     updateMessage({id: currentID, user:"System", content: update_string as string})
@@ -111,7 +112,10 @@ function ChatInput(){
     }
     return(
         <div className="justify-center items-center flex-col">
-            <div className="justify-center items-center flex">
+            <div className="justify-center items-center flex flex-col">
+                <div>
+                    {loading && <Loader/>}
+                </div>
                 <textarea
                     className="w-9/12 bg-transparent border-white border border-primary focus:outline-none shadow-xl focus:ring-1
                     rounded-lg h-20 mt-3"

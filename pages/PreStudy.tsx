@@ -16,12 +16,12 @@ export default function PreStudy() {
       </h1>
       <div className="flex flex-col">
         <div className="flex flex-col w-3/5 place-self-center">
-          <QuestionElement question={questionlist[0]} likertChange={undefined} />
-          <QuestionElement question={questionlist[1]} likertChange={undefined} />
-          <QuestionElement question={questionlist[2]} likertChange={undefined} />
+          <QuestionElement question={questionlist[0]}/>
+          <QuestionElement question={questionlist[1]}/>
+          <QuestionElement question={questionlist[2]}/>
         </div>
       </div>
-      <PreStudyButton id={undefined} nextPage={undefined} topicGrads={undefined} setTaskTopic={undefined} setMildness={undefined} addTime={undefined} />
+      <PreStudyButton/>
     </>
   );
 }
