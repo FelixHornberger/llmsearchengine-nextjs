@@ -1,11 +1,12 @@
 
 'use client';
 import React from 'react'
+import { usePageStore } from '@/src/pagecounter';
 
-const NextPageButton = ({ nextPage, addTime }) => {
+const NextPageButton = () => {
+    const nextPage = usePageStore((state) => state.increse) ;
     const handleClick = () => {
-        addTime('startTime');
-        nextPage();
+        nextPage(1);
     }
     return (
         <div className='text-center'>

@@ -12,7 +12,7 @@ interface UseMessageState {
   updateMessage: (updatedMessage: Message) => void;
 }
 
-export const useMessage = create<UseMessageState>()((set) => ({
+export const useMessageStore = create<UseMessageState>()((set) => ({
   messages: [],
   addMessage: (newMessage) =>
   set((state) => ({

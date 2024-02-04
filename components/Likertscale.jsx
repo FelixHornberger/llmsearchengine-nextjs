@@ -21,7 +21,7 @@ function Likertscale({ topic, likertChange, valuation}) {
       }
     };
     return (
-      <div className="flex content-center inline">
+      <div className="flex content-center justify-center inline">
         <p className="">Strongly Disagree</p>
         <ul className="flex list-none px-5 place-content-around content-center" id={topic}>
           {[...Array(7).keys()].map((index) => (

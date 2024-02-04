@@ -8,7 +8,7 @@ import {
   } from 'eventsource-parser';
 import TaskButton from "./TaskButton";
 import React from "react";
-import { useMessage } from "@/src/message";
+import { useMessageStore } from "@/src/message";
 import { count } from "console";
 interface Message {
     id: number;
@@ -17,14 +17,14 @@ interface Message {
 }
 
 
-function ChatInput({nextPage, addTime}){
+function ChatInput(){
     const [loading, setLoading] = useState(false);
     const [generatedAnswers, setGeneratedAnswers] = useState<String>('');
     // const [generatedAnswers2, setGeneratedAnswers2] = useState<String>('');
     const [showButton, setVisbility] = useState(false);
     const [counterChat, setCounterChat] = useState(0);
-    const addMessageZustand = useMessage((state) => state.addMessage) ;
-    const updateMessage = useMessage((state) => state.updateMessage);
+    const addMessageZustand = useMessageStore((state) => state.addMessage) ;
+    const updateMessage = useMessageStore((state) => state.updateMessage);
 
     const generateAnswer = async (e: any, prompt: string) => {
         e.preventDefault();

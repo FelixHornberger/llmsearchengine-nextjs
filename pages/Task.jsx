@@ -1,11 +1,11 @@
 import SelectedTaskBox from '@/components/SelectedTaskBox'
 import ChatInput from "@/components/ChatInput";
 import Message from "@/components/Message";
-import {useMessage} from '@/src/message';
+import {useMessageStore} from '@/src/message';
 import { useEffect, useRef } from 'react';
 
 function Task({ topic, nextPage, addMessage, addTime }) {
-    const { messages } = useMessage();
+    const { messages } = useMessageStore();
     const chatMessagesRef = useRef(null);
 
     useEffect(() => {

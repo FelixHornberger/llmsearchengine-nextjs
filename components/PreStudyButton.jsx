@@ -1,5 +1,7 @@
 'use client'
 
+//TODO: ADD Zustand
+
 function PreStudyButton({ id, nextPage, topicGrads, setTaskTopic, setMildness, addTime}){
     const handleClick = () => {
         if (topicGrads['firstTopic'] !== '' &&
