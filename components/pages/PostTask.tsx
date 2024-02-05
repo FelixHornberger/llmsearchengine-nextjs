@@ -4,11 +4,14 @@ import PostTaskButton from "@/components/buttons/PostTaskButton";
 import { useTaskTopicStore } from '@/src/tasktopic';
 import { useArgumentsBeforeStore } from '@/src/argumentbefore';
 import ArgumenTextarea from "@/components/ArgumenTextarea";
+import { useArgumentsAfterStore } from "@/src/argumentsafter";
 
 
 export default function PostTask() {
+    const argument = useArgumentsAfterStore();
     const taskTopic = useTaskTopicStore();
     const argumentbefore = useArgumentsBeforeStore();
+    const changeArgument = useArgumentsAfterStore((state) => state.setArgumentsAfter);
     const formattedMessage = argumentbefore['arguments'].replace(/\n/g, '<br>');
     
     return (
@@ -24,7 +27,7 @@ export default function PostTask() {
                 </div>
             </div>
             <p>After having informed yourself about the topic, are there any reasons previously not mentioned? If so please explain them here:</p>
-            <ArgumenTextarea before={false}/>
+            <ArgumenTextarea argument={argument} changeArgument={changeArgument}/>
             <PostTaskButton/>
         </div>
     );

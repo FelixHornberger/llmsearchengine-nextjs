@@ -3,25 +3,28 @@ import PreTaskButton from "@/components/buttons/PreTaskButton";
 import ArgumenTextarea from "@/components/ArgumenTextarea";
 import {useMildnessStore} from '@/src/mildness';
 import { useTaskTopicStore } from '@/src/tasktopic';
+import { useArgumentsBeforeStore } from '@/src/argumentbefore';
 
 function PreTask() {
     const mildness = useMildnessStore();
     const taskTopic = useTaskTopicStore();
-    // TODO: - Implemnt strong_opninion; (selection of it)
+
+    const changeArgument = useArgumentsBeforeStore((state) => state.setArgumentsBefore);
+    const argument = useArgumentsBeforeStore();
+
     let headline ="You previously selected that you did have a strong opinion about the following topic:"
     if (mildness['mildness'] === true){
         headline = "You previously selected that you did not have a strong opinion about the following topic:"
     }
     return (
-        // TODO: Selected TaskBox now hold a test String
         <div className="flex-coloum">
             <h1>{headline}</h1>
             <SelectedTaskBox topic={taskTopic['taskTopic']}/>
             <p>If you had to explain, which arguments for and against do you see in the following topic. Please explain your thinking.
                 <br></br>
-                (It's okay if you don't know anything about the subject - you are not forced to write anything.)
+                (It&apos;s okay if you don&apos;t know anything about the subject - you are not forced to write anything.)
             </p>
-            <ArgumenTextarea before={true}/>
+            <ArgumenTextarea argument={argument} changeArgument={changeArgument}/>
             <PreTaskButton />
         </div>
     );

@@ -20,11 +20,11 @@ export default function PostStudy() {
                     <option id="female">Female</option>
                     <option id="male">Male</option>
                     <option id="divers">Divers</option>
-                    <option id="none">Don't want to specify</option>
+                    <option id="none">Don&apos;t want to specify</option>
                 </select>
             </div>
             <div className="mb-3">
-                <p>What's your highest level of education'</p>
+                <p>What&apos;s your highest level of education&apos;</p>
                 <select id="highest-level-of-education" className="h-6 w-full text-custom-accent-text">
                     <option disabled selected>
                         Select an option
@@ -38,8 +38,8 @@ export default function PostStudy() {
             </div>
             <div className="mb-3">
                 <p>
-                    What's your current occupation? (e.g.: if you are currently studying
-                    at a university insert 'Student')
+                    What&apos;s your current occupation? (e.g.: if you are currently studying
+                    at a university insert &apos;Student&apos;)
                 </p>
                 <input
                     id="occupation"
