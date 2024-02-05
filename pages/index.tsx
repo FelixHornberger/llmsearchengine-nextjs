@@ -1,12 +1,11 @@
-import IntroPage from "./IntroPage"
-import Task from "./Task"
-import PostTask from "./PostTask";
+import IntroPage from "@/components/pages/Intro";
+import Task from "@/components/pages/Task";
+import PostTask from "@/components/pages/PostTask";
 import { Inter } from "next/font/google";
 import { usePageStore } from "@/src/pagecounter";
-import PreStudy from "./PreStudy";
-import PreTask from "./PreTask";
-import PostStudy from "./PostStudy";
-import { Component } from "react";
+import PreStudy from "@/components/pages/PreStudy";
+import PreTask from "@/components/pages/PreTask";
+import PostStudy from "@/components/pages/PostStudy";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +21,10 @@ export default function Home() {
       elementToReturn = <PreStudy/>
       break;
     case 2:
-      elementToReturn = <PreTask topic={undefined} nextPage={undefined} setArgumentsBevorTask={undefined} mildness={undefined} addTime={undefined}/>;
+      elementToReturn = <PreTask/>;
       break;
     case 3:
-      elementToReturn = <Task topic={undefined} nextPage={undefined} addMessage={undefined} addTime={undefined} />
+      elementToReturn = <Task/>
       break;
     case 4:
       elementToReturn = <PostTask></PostTask>

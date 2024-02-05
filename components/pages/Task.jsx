@@ -1,6 +1,6 @@
 import SelectedTaskBox from '@/components/SelectedTaskBox'
-import ChatInput from "@/components/ChatInput";
-import Message from "@/components/Message";
+import ChatInput from "@/components/chatSystem/ChatInput";
+import Message from "@/components/chatSystem/Message";
 import { useMessageStore } from '@/src/message';
 import { useEffect, useRef } from 'react';
 import { useTaskTopicStore } from '@/src/tasktopic';

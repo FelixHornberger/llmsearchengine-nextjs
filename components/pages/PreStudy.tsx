@@ -1,5 +1,5 @@
 import QuestionElement from "@/components/QuestionElement";
-import PreStudyButton from "@/components/PreStudyButton";
+import PreStudyButton from "@/components/buttons/PreStudyButton";
 
 const questionlist = [
   "Should students wear school uniform?",

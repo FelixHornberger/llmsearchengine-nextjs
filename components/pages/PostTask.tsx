@@ -1,6 +1,6 @@
 import SelectedTaskBox from "@/components/SelectedTaskBox";
 import Likertscale from "@/components/Likertscale";
-import PostTaskButton from "@/components/PostTaskButton";
+import PostTaskButton from "@/components/buttons/PostTaskButton";
 import { useTaskTopicStore } from '@/src/tasktopic';
 import { useArgumentsBeforeStore } from '@/src/argumentbefore';
 import ArgumenTextarea from "@/components/ArgumenTextarea";

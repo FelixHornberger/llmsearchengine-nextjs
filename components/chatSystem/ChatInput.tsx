@@ -6,7 +6,7 @@ import {
     ParsedEvent,
     ReconnectInterval,
   } from 'eventsource-parser';
-import TaskButton from "./TaskButton";
+import TaskButton from "../buttons/TaskButton";
 import React from "react";
 import { useMessageStore } from "@/src/message";
 import { count } from "console";

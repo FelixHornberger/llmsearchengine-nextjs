@@ -1,4 +1,4 @@
-import NextPageButton from "@/components/NextPageButton";
+import NextPageButton from "@/components/buttons/NextPageButton";
 
 function Intro({nextPage, addTime}){
     return(

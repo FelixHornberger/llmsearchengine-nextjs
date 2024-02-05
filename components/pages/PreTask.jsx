@@ -1,5 +1,5 @@
 import SelectedTaskBox from "@/components/SelectedTaskBox";
-import PreTaskButton from "@/components/PreTaskButton";
+import PreTaskButton from "@/components/buttons/PreTaskButton";
 import ArgumenTextarea from "@/components/ArgumenTextarea";
 import {useMildnessStore} from '@/src/mildness';
 import { useTaskTopicStore } from '@/src/tasktopic';
