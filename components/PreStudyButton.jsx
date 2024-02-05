@@ -1,10 +1,10 @@
 'use client'
-import { useTopicGradingStore } from '@/src/topicprestudy'
+import { useTopicGradingStore } from '@/src/topicgrades';
 import { usePageStore } from '@/src/pagecounter';
 import { useMildnessStore } from '@/src/mildness'
 import { selectTask } from "@/utils/selecttasktopic";
 import { useTaskTopicStore } from '@/src/tasktopic';
-//TODO: ADD Zustand
+import { useTimeDataStore } from '@/src/time';
 
 function PreStudyButton() {
 
@@ -12,6 +12,7 @@ function PreStudyButton() {
   const nextPage = usePageStore((state) => state.increse);
   const setMildness = useMildnessStore((state) => state.setMildness);
   const setTaskTopic = useTaskTopicStore((state) => state.setTaskTopic);
+  const setTime = useTimeDataStore((state) => state.setTimeData);
 
   const handleClick = () => {
     if (topicGrads['topicGrading']['firstTopic'] !== '' &&
@@ -38,6 +39,7 @@ function PreStudyButton() {
           setTaskTopic("Is Obesity a Disease?");
           break;
       }
+      setTime({preStudy: new Date().toLocaleTimeString()})
       nextPage(1);
     }
   }

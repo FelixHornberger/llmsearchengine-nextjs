@@ -117,8 +117,8 @@ function ChatInput(){
                     {loading && <Loader/>}
                 </div>
                 <textarea
-                    className="w-9/12 bg-transparent border-white border border-primary focus:outline-none shadow-xl focus:ring-1
-                    rounded-lg h-20 mt-3"
+                    className="bg-transparent w-[80%] border-white border border-primary focus:outline-none shadow-xl focus:ring-1
+                    rounded-lg mt-3"
                     placeholder="Type a message..."
                     id="message-input"
                     defaultValue={""}

@@ -1,6 +1,6 @@
 import SelectedTaskBox from "@/components/SelectedTaskBox";
 import PreTaskButton from "@/components/PreTaskButton";
-import PreTaskTextarea from "@/components/PreTaskTextarea";
+import ArgumenTextarea from "@/components/ArgumenTextarea";
 import {useMildnessStore} from '@/src/mildness';
 import { useTaskTopicStore } from '@/src/tasktopic';
 
@@ -21,7 +21,7 @@ function PreTask() {
                 <br></br>
                 (It's okay if you don't know anything about the subject - you are not forced to write anything.)
             </p>
-            <PreTaskTextarea />
+            <ArgumenTextarea before={true}/>
             <PreTaskButton />
         </div>
     );

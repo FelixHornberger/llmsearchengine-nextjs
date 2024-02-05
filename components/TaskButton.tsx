@@ -1,16 +1,17 @@
 'use client';
 import { useMessageStore } from '@/src/message';
 import { usePageStore } from '@/src/pagecounter';
+import { useTimeDataStore } from '@/src/time';
+
 import React from 'react'
 
-// TODO: ADD Time Zustand.
 const TaskButton = ({}) => {
 
+    const setTime = useTimeDataStore((state) => state.setTimeData);
     const nextPage = usePageStore((state) => state.increse);
-    const { messages } = useMessageStore();
 
     const handleClick = () => {
-        console.log(messages)
+        setTime({task: new Date().toLocaleTimeString()});
         nextPage(1);
     }
     return (

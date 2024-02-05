@@ -4,6 +4,7 @@ interface TopicGrading {
     firstTopic: string;
     secondTopic: string;
     thirdTopic: string;
+    evalGrade: string;
 }
   
 interface TopicGradingState {
@@ -15,7 +16,8 @@ export const useTopicGradingStore = create<TopicGradingState>()((set) => ({
     topicGrading: {
       firstTopic: '',
       secondTopic: '',
-      thirdTopic: ''
+      thirdTopic: '',
+      evalGrade: ''
     },
     setTopicGrade: (newValue) =>
       set((state) => ({

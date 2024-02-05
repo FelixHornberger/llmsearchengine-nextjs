@@ -1,6 +1,6 @@
 'use client'
 
-import { useTopicGradingStore } from '@/src/topicprestudy'
+import { useTopicGradingStore } from '@/src/topicgrades'
 
 
 function Likertscale({ topic, valuation }) {
@@ -22,7 +22,7 @@ function Likertscale({ topic, valuation }) {
           break;
       }
     } else {
-      likertChange(selectedValue);
+      setTopicGrade({ evalGrade: selectedValue });
     }
   };
   return (

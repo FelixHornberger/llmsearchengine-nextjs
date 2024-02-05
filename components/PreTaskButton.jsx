@@ -1,13 +1,15 @@
 'use client'
+import PreTask from '@/pages/PreTask';
 import { usePageStore } from '@/src/pagecounter';
-
+import { useTimeDataStore } from '@/src/time';
 
 
 function PreTaskButton() {
 
+    const setTime = useTimeDataStore((state) => state.setTimeData);
     const nextPage = usePageStore((state) => state.increse);
-    //TODO: ADDTime Function
     const handleClick = () => {
+        setTime({preTask: new Date().toLocaleTimeString()});
         nextPage(1);
     }
     return (
