@@ -6,6 +6,7 @@ import { useEffect, useRef } from 'react';
 import { useTaskTopicStore } from '@/src/tasktopic';
 
 
+//TODO: ADD Condition + Message hsitory needs to be in the prompt.
 
 function Task({ }) {
     const { messages } = useMessageStore();

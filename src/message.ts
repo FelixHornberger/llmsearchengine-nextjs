@@ -1,3 +1,4 @@
+import { todo } from 'node:test';
 import { create } from 'zustand'
 
 interface Message {
@@ -5,7 +6,9 @@ interface Message {
     user: string;
     content: string;
 }
-  
+
+// Todo: AddTimestamp
+
 interface UseMessageState {
   messages: Message[];
   addMessage: (newMessage: Message) => void;

@@ -1,5 +1,8 @@
 import SubmitButton from "@/components/buttons/SubmitButton";
 
+// TODO: Submission needs to return Date by Input of Matrikelnummer
+// Refactor every input component to a client side component
+
 export default function PostStudy() {
     return (
         <>
