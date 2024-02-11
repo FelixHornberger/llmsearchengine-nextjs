@@ -5,6 +5,8 @@ import { useMildnessStore } from '@/src/mildness'
 import { selectTask } from "@/utils/selecttasktopic";
 import { useTaskTopicStore } from '@/src/tasktopic';
 import { useTimeDataStore } from '@/src/time';
+import { useState } from 'react';
+import PreStudyUserFeedback from '../PreStudyUserFeedback';
 
 function PreStudyButton() {
 
@@ -12,7 +14,10 @@ function PreStudyButton() {
   const nextPage = usePageStore((state) => state.increse);
   const setMildness = useMildnessStore((state) => state.setMildness);
   const setTaskTopic = useTaskTopicStore((state) => state.setTaskTopic);
+  const taskTopic = useTaskTopicStore();
   const setTime = useTimeDataStore((state) => state.setTimeData);
+
+  const [showUserFeedback, setVisbility] = useState(false);
 
   const handleClick = () => {
     if (topicGrads['topicGrading']['firstTopic'] !== '' &&
@@ -41,12 +46,17 @@ function PreStudyButton() {
       }
       setTime({preStudy: new Date().toLocaleTimeString()})
       nextPage(1);
+    } else {
+      setVisbility(true);
     }
   }
   return (
-    <button onClick={() => handleClick()} className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3">
-      Continue
-    </button>
+    <>
+      {showUserFeedback && <PreStudyUserFeedback/>}
+      <button onClick={() => handleClick()} className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3">
+        Continue
+      </button>
+    </>
   )
 }
 
