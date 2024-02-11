@@ -64,11 +64,11 @@ function ChatInput(){
                 setGeneratedAnswers((prev) => prev + text);
                 update_string += text
                 if (updateCounter === 0) {
-                    addMessageZustand({id: currentID, user:"System", content: update_string as string})
+                    addMessageZustand({id: currentID, user:"System", content: update_string as string, timestamp: new Date().toLocaleTimeString()})
                 } else {
                     /* console.log("I should update");
                     console.log(`My Id is: ${currentID}, user is System, content is: ${generatedAnswers}`); */
-                    updateMessage({id: currentID, user:"System", content: update_string as string})
+                    updateMessage({id: currentID, user:"System", content: update_string as string, timestamp: new Date().toLocaleTimeString()})
                 }
                 console.log("Schau mal",generatedAnswers)
                 updateCounter++;
@@ -98,7 +98,8 @@ function ChatInput(){
                 addMessageZustand({
                     id: counterChat, 
                     user: "User", 
-                    content:messageText}
+                    content:messageText,
+                    timestamp: new Date().toLocaleTimeString()}
                 );
                 event.currentTarget.value = '';
                 generateAnswer(event, messageText);
