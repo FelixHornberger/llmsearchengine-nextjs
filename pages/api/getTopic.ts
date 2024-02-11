@@ -1,0 +1,2 @@
+// Here we retrieve the current distribution of opinion instances from the database with which the chat system is to argue.
+// To do this, we retrieve the number of values: pro, con, neutral from the variable "condition" from the participant table 
