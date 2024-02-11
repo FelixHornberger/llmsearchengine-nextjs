@@ -5,6 +5,7 @@ interface Message {
     id: number;
     user: string;
     content: string;
+    timestamp: string;
 }
 
 // Todo: AddTimestamp
