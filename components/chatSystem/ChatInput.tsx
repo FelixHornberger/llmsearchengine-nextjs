@@ -9,13 +9,11 @@ import {
 import TaskButton from "../buttons/TaskButton";
 import React from "react";
 import { useMessageStore } from "@/src/message";
-import { count } from "console";
 import Loader from "./Loader";
-interface Message {
-    id: number;
-    message: string;
-    answer: string;
-}
+import { generatePrompt } from "@/utils/prompt";
+import { useTaskTopicStore } from "@/src/tasktopic";
+import { useConditionStore } from "@/src/condition";
+
 
 
 function ChatInput(){
@@ -26,6 +24,9 @@ function ChatInput(){
     const [counterChat, setCounterChat] = useState(0);
     const addMessageZustand = useMessageStore((state) => state.addMessage) ;
     const updateMessage = useMessageStore((state) => state.updateMessage);
+    const messages = useMessageStore();
+    const condition = useConditionStore();
+    const taskTopic = useTaskTopicStore();
 
     // TODO: Need to add a costume script for the prompts
     const generateAnswer = async (e: any, prompt: string) => {
@@ -102,7 +103,12 @@ function ChatInput(){
                     timestamp: new Date().toLocaleTimeString()}
                 );
                 event.currentTarget.value = '';
-                generateAnswer(event, messageText);
+                if (counterChat === 0) {
+                    generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, null));
+                } else {
+                    generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, messages.messages));
+                }
+                
                 if (!showButton) {
                     setVisbility(true);
                 } 
