@@ -655,7 +655,7 @@ function getSources(condition: string, taskTopic: string){
 
 export function generatePrompt(userInput:string, taskTopic:string, condition:string, messages:Message[] | null ) {
     let prompt =prompt_stance[condition];
-    prompt.replace('$SOURCES$',JSON.stringify(getSources(condition, taskTopic)))
+    prompt = prompt.replace('$SOURCES$',JSON.stringify(getSources(condition, taskTopic)))
     if (messages !== null){
         prompt += '\n The following is the chat history:'
         for (let message of messages){
