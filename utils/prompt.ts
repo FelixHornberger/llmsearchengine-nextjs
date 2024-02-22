@@ -169,9 +169,178 @@ const property_rights_topic:TopicStructure = {
             headline: 'Why Are Intellectual Property Rights Important'
         },
         two:{
-            link: '',
-            text: '',
-            headline: ''
+            link: 'https://www.gov.uk/government/publications/ip-basics/ip-basics',
+            text: 'IP Basics\n' +
+                'The new UK National Security and Investment Act 2021 comes into effect fully from 4 January 2022. Businesses and investors should check the guidance to understand what types of acquisitions are covered by the new rules.\n' +
+                'What is IP?\n' +
+                'Unlike the products they protect, IP assets cannot be seen or touched. So, it can be difficult for businesses to appreciate their true value. Like other forms of property, you can buy, sell and license IP. IP Rights can enable their owner to take action under civil law to try and stop others from replicating, using, importing or selling their creation.\n' +
+                'The different types of intellectual property rights are:\n' +
+                'Patents protect new inventions and cover how products work, what they do, how they do it, what they are made of and how they are made.\n' +
+                'Trade marks protect brands. This could be for a business name, a product or a service. The trade mark could be made up of words, logos or a combination of both and can even be sound or action based.\n' +
+                'Design protects the overall visual appearance of a product.\n' +
+                'Copyright protects literature, artistic works, photographs, music, dramatic works, software, databases, films, radio and television broadcasts, sound recordings and published editions.\n' +
+                'Trade secrets might also be an important part of your business. The law of confidentiality protects trade secrets. To keep trade secrets protected, you must establish that the information is confidential, and ensure that anyone you tell about it signs a non-disclosure agreement (NDA). If they then tell anyone about it, this is a breach of confidence and you can take legal action against them.\n' +
+                'You can download a template of a Non-Disclosure Agreement.\n' +
+                'IP in business planning\n' +
+                'Your business builds goodwill and recognition through your brand, product or service. This value builds up over time and becomes integral linked to your business’s IP assets. If used well, IP can offer a solid platform for any business to grow. How you plan, manage and protect your ideas should be a crucial feature in your business planning. What seems unimportant today could be worth millions of pounds in the future, if protected.\n' +
+                'Getting help\n' +
+                'One of the first things you should do is understand if you should protect your IP. You could invest time and money in your business, only to later find the IPalready belongs to someone else.\n' +
+                'The free, fast and easy-to-use online IP Health Check is used by thousands of businesses to both identify their IP assets and provide advice on how to protect them:\n' +
+                'The British Library Business and IP Centre supports entrepreneurs, inventors and small businesses and is also a source of help.\n' +
+                'Advice on creating a business plan.\n' +
+                'Valuing your IP\n' +
+                'You should regularly take stock of your IP assets. This is called an ‘IP Audit’ and it will help you in valuing your IP.\n' +
+                'When conducting an IP audit, you should:\n' +
+                '1. Identify the products and services that are crucial to your business.\n' +
+                '2. Identify your IP assets and the legal rights associated with them.\n' +
+                '3. Identify what market advantage these rights give you.\n' +
+                'After you have done this, you should value your IP assets as you would your physical assets. For example your customer list or database can be a competitive intangible asset you should identify and protect. A secret recipe or a unique service technique might also fall into this category.\n' +
+                'As a starting point, try to calculate how much time would be required to develop these assets from scratch or how much a competitor might pay for them. An accountant may be able to help you value these assets and place them in context of your business.\n' +
+                'Licensing IP\n' +
+                'You might consider licensing your intellectual property, or acquiring the right to license others’ IP, for some of the following reasons:\n' +
+                'Sharing risk\n' +
+                'Where a licensor provides the right to manufacture and sell products, it receives revenues but does not take the risk of manufacturing, promoting or selling the products. The licensee then has the right to use the IP without the expense of developing the product.\n' +
+                'Revenue generation\n' +
+                'An IP owner can both commercialise the IP themselves and raise income by licensing the IP to someone else.\n' +
+                'Increasing market penetration\n' +
+                'IP holders can license another business to trade in territories that the owner cannot cover.\n' +
+                'Reducing costs\n' +
+                'A business may ‘buy-in’ innovation to reduce its research and development costs.\n' +
+                'Saving time\n' +
+                'A business may get its products or services to market more quickly by acquiring a licence to use existing IP, instead of re-inventing the wheel (sometimes called an ‘engineering workaround’).\n' +
+                'Accessing expertise\n' +
+                'By taking a licence, a business may tap into expertise that it does not have in-house.\n' +
+                'Competitive advantage\n' +
+                'By acquiring a licence to use IP, a business may obtain an advantage over its competitors\n' +
+                'Collaboration agreements\n' +
+                'Businesses may want to work together to develop new products and services.\n' +
+                'Whenever you think about taking or granting a licence of any IP, the first step should be to consider the needs and objectives of your business. The specific terms and conditions on which IP is licensed is then usually negotiated by the licensor and licensee.\n' +
+                'Franchising\n' +
+                'When a successful business wants to expand, one option is to license IP to franchisees. In addition to the actual product or service, the various forms of IPsuch as trade marks, promotional materials, business and marketing systems, shop fit-outs and confidential information can all be licensed to the franchisee to use.\n' +
+                'Franchising (see British Franchise Association) is a way of sharing IP with others to distribute goods or services - the franchisor owns the IP rights and the franchisee pays a fee or regular royalties to use them.\n' +
+                'A major benefit of the franchise system is the ability to trade under a well-known trade mark. Usually, the franchisor grants a trade mark licence to the franchisee in return for a percentage of the gross turnover.\n' +
+                'One example of a successful franchise is Costa® coffee. They give the franchisee permission to use their brand and a business template to use. This sets out how the premises must look, the service levels and training required. The franchisee then gives Costa® a percentage of their earnings.\n' +
+                'IP Health Check also shows what IP your business has so you can see if franchising could work for you.\n' +
+                'Trade marks\n' +
+                'Many people refer to their trade mark as their brand, although a brand is more than just a company logo. A brand is a ‘promise of an experience’ and offers consumers assurance about the nature of the product or service they will receive. The various IP rights covered in this guide combine to provide legal protection for some of the most important aspects of a brand.\n' +
+                'A trade mark is a crucial component of a brand; it distinguishes the goods and services from one trader to another. It can be a word, phrase or logo, and can even be a shape, colour, sound, aspect of packaging or any combination of these. You can use your trade mark as a marketing tool so that customers can more easily recognise your products or services.\n' +
+                'Registration at Companies House gives you no rights to prevent others using your trade mark - neither does owning the domain name for your website!\n' +
+                'Registered trade marks\n' +
+                '• may put people off using your trade mark without your permission\n' +
+                '• make it much easier for you to take legal action against anyone who uses your trade mark without your permission\n' +
+                '• allows Trading Standards Officers or Police to bring criminal charges against counterfeiters if they use your trademark\n' +
+                '• means you can sell it, franchise it or let other people have a licence that allows them to use it.\n' +
+                '• trade marks are registered for a fee by the Intellectual Property Office in the UK and other bodies worldwide.\n' +
+                'They must be renewed every ten years, but can be renewed indefinitely. Registered trade marks can be identified by the ® symbol.\n' +
+                'The most effective trade marks are those ‘distinctive’ to the goods and services they protect. This allows consumers to identify your goods or service from your competitors.\n' +
+                'Not everything can be registered as a trade mark. Trade marks which can be difficult to register include those which:\n' +
+                '• describe the products you sell or the services you offer, for example ‘mature cheese’;\n' +
+                '• are not clearly of commercial origin for customers, for example, the phrase ‘Putting Customers First’\n' +
+                '• have become customary in your line of trade, for example ‘Four by Four’ or ‘4 x 4’ for vehicles\n' +
+                '• include a specially protected emblem, for example, the ‘Red Cross’ or the ‘Olympic Rings’\n' +
+                '• are offensive to the public, for example, trade marks which contain taboo words or pornographic images;\n' +
+                '• deceive the consumer\n' +
+                '• are three dimensional shapes which are typical of the goods you are interested in, for example, the shape of a simple plastic bottle for your drink product\n' +
+                'If your trade mark does not fall into any of these categories, there is a good chance that it will be considered acceptable for registration.\n' +
+                'If, after being published, your trade mark does not then attract any objections from other trade mark holders, it will be registered.\n' +
+                'You should receive a formal report explaining the outcome of the examination within 10 days of applying. If your application is acceptable, it can be registered in as little as 3 months from the date of filing. It can obviously take longer if you have objections which you need to overcome.\n' +
+                'Getting help\n' +
+                'For advice on building your brand, registering overseas or more complex aspects of the trade mark process, contact the Chartered Institute of Trade Mark Attorneys.\n' +
+                'For more detailed information on trade marks, including how to search for existing registered trade marks and how to register internationally.\n' +
+                'Unregistered trade marks\n' +
+                'If a business doesn’t register its trade mark, it may still be able to take some action if someone uses the mark without permission. It would need to use the common law action of ‘passing off’. However, passing off can be very difficult and expensive to prove.\n' +
+                'Broadly, to be successful in a passing off action the trade mark owner must prove that:\n' +
+                '1. There is protectable goodwill in the mark;\n' +
+                '2. There is a misrepresentation of the mark, and\n' +
+                '3. That misrepresentation caused damage.\n' +
+                'Without misrepresentation there is no passing off. This is a complicated area of law and in any such situations it would be wise to seek advice from an IPAttorney.\n' +
+                'Intellectual Property: Herdy provides a case study on how to successfully use a trade mark within a business.\n' +
+                'Designs\n' +
+                'Design for appearance\n' +
+                'Design refers to the appearance or ‘look’ of products and there are two types of protection in law:\n' +
+                '• a registered design is where your designs are examined and registered by the IPO or other international bodies\n' +
+                '• an unregistered design right is automatic but offers significantly less protection\n' +
+                'Registered design\n' +
+                'Design registration protects the appearance or ‘look’ of a product, providing it is new and has individual character. The design must have a special shape, configuration, pattern or ornamentation to be registered.\n' +
+                'Some people confuse patent protection and design protection. Designs protect the visual appearance of a product whereas a patent protects a technical product and how it functions.\n' +
+                'Registering your design allows you to gain a marketing edge by preventing others from using it without your permission.\n' +
+                'You cannot obtain a registered design right for an idea or concept, it’s a ‘what you see is what you get’ right. So, it’s vitally important that your application contains images of the product or the packaging you wish to protect. This must be identical to those you intend to actually place on the market.\n' +
+                'Some products can’t be registered because they don’t fit the criteria to be considered a design. In general terms, these are products shaped in a particular way to achieve a technical function, or solely to fit to something else.\n' +
+                'You can’t register designs which are immoral or illegal, or contain a protected emblem such as the Royal crown.\n' +
+                'There are fees for registering a design, and the process takes around four weeks providing your design meets the above criteria.\n' +
+                'Unregistered design right\n' +
+                'Automatic design rights do exist in the UK (UK Unregistered Design Right) and in Europe (Unregistered Community Designs). However, they offer limited protection and can be difficult to enforce. They also have a much shorter duration.\n' +
+                'You should carefully consider the potential effect on your business if relying solely on unregistered design right. Where disputes arise, you may have to prove the existence of your rights. Unlike registered designs, it will be your responsibility to prove intentional copying.\n' +
+                'Advice\n' +
+                'The IPO has an Instagram account with lots of useful information to help creatives know their rights, protect and champion their products. Follow us @ipforbusiness and use the hashtag #IP4biz.\n' +
+                'If you are a designer, design maker or design innovator, Anti Copying in Design (ACID) offers practical advice and specialist support to help you understand and manage your intellectual property.\n' +
+                'Intellectual Property: Stuart Scott successfully used their design right within their business.\n' +
+                'Copyright\n' +
+                'Copyright gives its owner the right to exclusively control and exploit their creative works.\n' +
+                'It protects literature, art, music, dramatic works, sound recordings, photographs, software, databases, films and radio and television broadcasts. Copyright protects the expression of, not the idea behind a work. For example, the text and illustrations in a manual are protected, but not the ideas expressed in it.\n' +
+                'In the UK copyright is an automatic right which comes into being as soon as a qualifying work is created. As such, there is no formal registration and no fees to pay.\n' +
+                'Generally, the duration of copyright is usually for the life of the creator, plus 70 years from the end of the calendar year in which they died.\n' +
+                'However, different terms of duration apply for some types of copyright work, and certain older works may be subject to different rules.\n' +
+                'Copyright grants the copyright owner exclusive rights to authorise or prohibit certain uses of their works. This includes;\n' +
+                '• copying the work\n' +
+                '• distributing copies to the public\n' +
+                '• adapting the work\n' +
+                '• communicating the work to the public (for example, by broadcasting it or putting it on the internet)\n' +
+                '• renting/lending copies to the public, and\n' +
+                '• performing the work in public\n' +
+                'Copyright and your business\n' +
+                'Businesses create and use copyright works all the time often without even realising it. It is important for businesses to understand how to commercialise and protect copyright works and how to lawfully use of copyright works belonging to others.\n' +
+                'If you commission third parties to create copyright works for your business, it is really important that you agree on who will own the copyright before the work is created. Some businesses commission work only to later find out that the creator still owns the copyright, meaning the business is limited in how it can use it.\n' +
+                'You should always check the terms and conditions, and if you are unsure you should check with the business providing the work.\n' +
+                'Intellectual Property: Radwraps Ltd provides a good example of a business makes the most of their Copyright.\n' +
+                'Patents\n' +
+                'A patent protects your invention and lets you take legal action against anyone who makes, uses, sells or imports your invention without your permission.\n' +
+                'A patent doesn’t keep your invention secret. In return for the legal protection you get, you share how to create or replicate your invention with the public. When your patent expires, other people can then make and sell your invention.\n' +
+                'You can only apply for a patent if you have created something that is inventive, new and useful. A patent can protect innovations like machines, industrial processes, pharmaceuticals and their production methods, computer hardware, electrical appliances and biological products and processes.\n' +
+                'You can’t patent, for example, literary, dramatic, musical or artistic works, anything that’s an idea, a way of thinking, a scientific or mathematical discovery.\n' +
+                'You have to pay the Intellectual Property Office to apply for a UK patent and the process can take several years before you receive a granted patent.\n' +
+                'Many applications never result in a granted patent because they don’t satisfy the legal requirements. Patents can give protection for 20 years provided renewal fees are paid each year.\n' +
+                'Getting a patent does not guarantee business success. You should carefully consider how you are going to use the patent and what you will gain from it.\n' +
+                'It’s generally your responsibility to enforce your patent and ensure it is properly protected, meaning that any legal action against another party will be started, and funded, by you.\n' +
+                'So, you need to make sure that the potential benefit of a patent will outweigh the time, effort and money it takes to get and maintain one.\n' +
+                'Advice\n' +
+                'We strongly advise you to seek legal advice before applying for a patent as it can be a complex and costly process. A patent specification is a legal document and requires specialist skills to draft properly. Only 1 in 20 applicants get a patent without professional help. Your chances of obtaining a useful patent are much greater if you use an IP professional.\n' +
+                'Patent attorneys are legally qualified and independently regulated. Some will give you initial advice free of charge. To make the most of this free advice it is recommended that you think about the questions you want to ask beforehand. This will allow you to gain as much information from the consultation as possible.\n' +
+                'A list of Patent Attorneys is available from the Chartered Institute of Patent Attorneys.\n' +
+                'UK PatLib Network centres cover all areas of the UK. They hold clinics with IPprofessionals and offer help on a variety of services including patent searching.\n' +
+                'Fact\n' +
+                'The most common mistake made by inventors is to reveal their invention before applying for a patent. If you have made your invention public, you could lose the possibility of being granted a patent.\n' +
+                'Intellectual property: GripIt Fixings shows how a patent can be used to gain a commercial advantage.\n' +
+                'Resolving disputes\n' +
+                'Right owners have the right to take civil court action to stop infringement and to seek damages. Remember: This works both ways, so do carry out all of the necessary checks to avoid unintentionally infringing other people’s IP.\n' +
+                'Counterfeiting and piracy relate to wholesale trade mark, registered design and copyright infringements. These are usually criminal acts, and Trading Standards, HM Revenue and Customs and the Police have powers to seize and destroy infringing goods and to bring criminal proceedings.\n' +
+                'Mediation\n' +
+                'The IPO also runs a mediation service for IP disputes. Mediation offers a way of resolving disputes without going to court. It is cheaper and quicker than litigation and the outcome is usually beneficial to all parties.\n' +
+                'Your IP abroad\n' +
+                'If you plan to do business or are already trading abroad, you must know how to use, guard and enforce your rights.\n' +
+                'IP rights tend to be territorial they only give protection in the countries where they are granted or registered. This means that if you only have UK protection, others may be allowed to use your IP abroad without infringing your rights. If you are thinking about trading abroad then you should consider registering your IPrights abroad.\n' +
+                'For copyright, however, the UK is a member of several international conventions. This means that UK works are protected in most countries automatically.\n' +
+                'Some countries may allow you to extend your UK protection, and will accept it as protected in that country after completing certain local formalities.\n' +
+                'The International IP Service has produced country guides which will help you apply these principles in the markets throughout the world. They describe the issues you may face with infringement, how you can effectively tackle this.\n' +
+                'IPO attaché network\n' +
+                'If you are thinking of doing business in South East Asia, China, Brazil or India, help and advice is also available through our UK overseas intellectual property attachés network.\n' +
+                'They work with local Department for Business and Trade (DBT) and Foreign and Commonwealth Office (FCO) leads to provide support for UK businesses seeking advice on local IP matters in those markets.\n' +
+                'They also:\n' +
+                '• raise awareness through business outreach. This includes briefing business delegations, joint webinars with UKTI and local trade associations\n' +
+                '• communicate with host governments and stakeholders about local and international IP frameworks and environment\n' +
+                'Further reading\n' +
+                'IP for business\n' +
+                'Businesses create and use intellectual property all the time, sometimes without realising it.\n' +
+                'The value of your IP whether it’s a trade mark, patent, design, copyright or trade secret can far outweigh the value of your physical assets.\n' +
+                'Keep ahead of the competition with the Intellectual Property Office’s IP for Business tools and guidance. These can help you create value from your ideas, and turn inspiration into sustainable business success.\n' +
+                'The IPO promotes innovation and growth by offering a vibrant programme of activities and informed advice and support to business.\n' +
+                'How to achieve your IP for business potential.\n' +
+                'Lambert toolkit\n' +
+                'This offers University and business collaboration model agreements to help publicly-funded research institutions and industry work together. It aims to help negotiations between potential partners and reduce the time, money and effort required. It includes model research collaboration agreements (one to one and multi-party) and guidance notes.\n' +
+                'Misleading invoices\n' +
+                'Customers have alerted us to unsolicited invitations/misleading invoices from companies offering services to protect IP rights. These look like they have come from an official source. These companies are not linked to any government or Community institution and you are not obliged to pay them. If in doubt check with your patent or trade mark attorney or contact us.\n' +
+                '\n',
+            headline: 'IP Basics'
         }
     },
     contra: {
@@ -589,26 +758,24 @@ const obesity_topic: TopicStructure= {
         },
         two:{
             link: 'https://www.spectator.co.uk/article/obesity-is-not-a-disease',
-            text: 'Obesity Not a Disease, AMA Council Says\n' +
-                'David Pittman,\n' +
-                'This article is a collaboration between MedPage Today and: \n' +
-                'CHICAGO -- Obesity is hard to define and diagnose, and partly because of that is not a disease, an American Medical Association (AMA) council said in a report issued here Monday.\n' +
-                'The report from the AMA\'s Council on Science and Public Health, released at the organization\'s annual meeting, angered many medical specialties who do consider obesity a disease.\n' +
-                'The report panned body mass index as a proxy for obesity, saying it\'s limited as a stand-alone. Furthermore, calling obesity a disease may undermine prevention efforts and will do little to impact its treatment, the report said.\n' +
-                '"Without a single, clear, authoritative, and widely accepted definition of disease, it is difficult to determine conclusively whether or not obesity is a medical disease state," the council told the AMA\'s policy-making House of Delegates. "Similarly, a sensitive and clinically practical diagnostic indicator of obesity remains elusive."\n' +
-                'Delegates here are considering that report along with a conflicting resolution from the New York delegation that would change AMA policy to call obesity a disease. They will try to resolve the AMA\'s stance later in the meeting, which ends Wednesday. Current AMA policy calls obesity a major public health problem, but stops short of calling it a disease.\n' +
-                'The topic drew about 45 minutes of back-and-forth discussion during Sunday\'s public health reference committee session.\n' +
-                'Supporters of defining obesity as a disease disagreed with the report and said if the AMA were to agree with them, it would help highlight the epidemic in this country and spur health insurers to take greater responsibility for obesity.\n' +
-                '"A condition leads to one set of solutions. A disease might lead to another," said John Armstrong, MD, a delegate of the American College of Surgeons, which co-sponsored the resolution that would call obesity a disease.\n' +
-                '"I would like to move away from the tyranny of \'Is it a condition or is it a disease?\' and simply define obesity as a chronic disease, combine public health and clinical approaches, and work to bend the weight curve in the U.S."\n' +
-                'The obesity-is-a-disease contingent also included the American Academy of Family Physicians and the American Association of Clinical Endocrinologists, who said evidence shows obesity is a multimetabolic and hormonal disease.\n' +
-                'Those in support of the council report not calling obesity a disease noted obesity rates have risen along with sugar intake in diets and reduced activity -- which are not indicative of a disease. If obesity is called a disease, they said employers would have to give obese workers special considerations.\n' +
-                '"We cannot say just because you are obese you will experience harm and morbidity from this, and that is part of a definition of a disease," said AMA public health council member Ilse Levin, DO, of the American Society of Addiction Medicine.\n' +
-                'Defining obesity as a disease will do little to actually change treatment management, she continued. "In this case, I don\'t really see how it will at this point."\n' +
-                'Changing the definition to a disease could have negative public health consequences and worsen the epidemic, others argued.\n' +
-                '"I believe telling people they have a disease allows people to throw up their arms and surrender and do nothing," Texas delegate Russ Kridel, MD, said.\n' +
-                'Payers already recognize obesity as a serious medical condition and Medicare covers bariatric surgery, he said, noting that people with a BMI greater than 40 can be considered disabled if it\'s called a disease.\n' +
-                '\n',
+            text: "Well, what diets have you tried so far?’ asked the GP, flicking through the patient’s notes. I was an innocent trainee doctor on my general practice placement at the time and watched the interaction carefully, sensing a row was about to ensue. ‘Look, I don’t want to go on a diet, I want you to prescribe me these,’ snapped the patient, bringing out a neatly folded page she had torn out of a magazine. The GP, rolling his eyes at me, took the paper but didn’t read it. I suspected he’d read it before. This was yet another example of what’s becoming a very British epidemic: obesity being self-diagnosed as disease.\n" +
+                "The doctor attempted to explain that tablets really aren’t suitable in her case. As well as having some potentially nasty side effects, they’re expensive to prescribe, and don’t offer a long-term solution. This was clearly not what the woman wanted to hear. ‘Fine then, don’t help me, see if I care. I’ll get my sister to get them off her GP — he gives her whatever she wants’; and she stormed out. It struck me as bizarre that while some people using the NHS are dangerously malnourished, other people are desperate to take tablets to ensure that their food passes through their body unabsorbed, while the taxpayer foots the bill.\n" +
+                "It happens all the time. The patients who are not interested in changing their diet in any way, demanding to have their cake, eat it and then pop a pill so that the calories never touch their waistline. And as a result, Britain now combines austerity with obesity. The majority of us are now overweight or obese — a third of children are considered too heavy. It costs an extra £5 billion a year, and 300 hospital admissions a day are directly due to obesity. To pick up the newspapers is to witness a country adjusting itself to losing a national battle of the bulge.\n" +
+                "Take the East Midlands Ambulance Service. It emerged this week that it has been picking up so many fat patients — weighing in excess of the 28-stone maximum — that it needs a new fleet. It has, hitherto, been struggling along with just one ambulance for fatties (a ‘bariatric’ vehicle), but now thinks all 272 of its ambulances need to be upgraded with double-wide stretchers for patients who (it says) can weigh in at 55 stone. The plan will cost £27 million.\n" +
+                "Once the obese patient is in hospital, a whole new set of equipment is required: reinforced operating tables, sturdier trollies, longer needles and even wider MRI scanners. There is a great demand for bariatric surgeons. One of them, Sally Norton, recently wrote in the Royal College of Surgeons’ house journal that without special equipment for the obese, there may be ‘enquiries into the potential use of veterinary or zoological scanners, with resultant loss of dignity for the patient’. There is a cost to all this: in the kit, and in operations like gastric bypass operations, which have increased sevenfold over the last seven years.\n" +
+                "Moving obese patients out of their house can be too difficult for the NHS. Recently the fire service had to demolish two walls of a house in south Wales so that a 63-stone teenager could be taken to hospital. This required more than 40 emergency service workers at an estimated cost of £100,000. Over the past five years, fire services have been called to more than 2,700 incidents to assist ‘severely obese’ people, including some who had got stuck in the bath. Rescuing fatties is now a routine operation, with its own entry in the Fire Brigade incident reporting system (filed under ‘bariatric persons’).\n" +
+                "So what to do? The government spends money asking us to eat ‘five a day’ fruit and veg, but it seems to have no effect. Nottingham, the fattest region in Britain, recently decided to spend £500,000 on replacing pavements in areas with particularly fat pedestrians, to try and encourage people to walk more. Our landscape is being, quite literally, reshaped in order to accommodate the obese. In the past few years, we have moved from being outraged about the epidemic to just planning around it. Like a middle-aged man deciding to eat what he wants and let himself go, Britain is pulling on a pair of tracksuit bottoms and heading to the fridge.\n" +
+                "It need not be this way. For too long, my fellow doctors have pussyfooted around their obese patients, too scared to confront the, er, elephant in the room. They don’t want to cause offence. Unbelievably, draft guidelines announced last year by the National Institute of Clinical Excellence and Health (Nice) suggested that doctors should even avoid the use of the term ‘obese’ for fear that larger patients might be upset. Instead, Nice recommended advising corpulent patients that they should seek a ‘healthier weight’.\n" +
+                "But nice euphemisms mean that people don’t confront reality. I’m not going to stop diagnosing cancer just because people don’t like hearing the dreaded word. So why should it be different when informing people that they are obese? Sometimes morbidly so. What Nice is delicately skirting round is what many doctors, nurses and dieticians will confirm: people don’t like being told that they are overweight, even if it’s objectively clearly the case. And by pretending that this is a disease, the doctors are making it even worse.\n" +
+                "There’s something comforting about blaming obesity on genes. It enables people to relinquish responsibility for their weight, which can be seen as outside their control. It’s nothing new, either. Years ago, fat people blamed their ‘glands’. When I started medical school, I patiently waited for us to be taught about these magical ‘glands’ that made people fat. I’m still waiting. Even when people have problems with an underactive thyroid, which can slow the metabolism and result in weight gain, this can be treated with thyroid replacement tablets and the metabolism returns to normal. As a rule, however, fat people have one thing in common: they eat more than they need to.\n" +
+                "Certainly some people metabolise food at a different rate to others, meaning they are more likely to lay down fat stores than other people. But this is a reason to eat less, not to become fat. You cannot get away from the basic biology of the human body — fat is simply stored excess energy, and weight gain is only possible when the total amount of energy consumed exceeds the total amount of energy expended. Even those who have a genetic predisposition to become fat are not slaves to their DNA.\n" +
+                "An in-depth study published last year, which looked at the genes of more than 20,000 people and was conducted at the Medical Research Council’s epidemiology unit in Cambridge, found some people are predisposed to be overweight. But an active lifestyle and reducing food intake can counteract that. Simple. While some will be annoyed by this research, I find it empowering. The idea that our genes control us is profoundly depressing. After all, there is more to being human than a few strands of DNA.\n" +
+                "The rate of people considered clinically obese has risen from around 1 to 2 per cent of the population in the 1960s to over 25 per cent now. Why? A simple answer would be lifestyle, but it’s actually a little more complicated. A fascinating survey conducted by the Department of Health compared data collected from 1967 and 2010. It showed that, while people back then were slimmer, they ate fattier foods and had access to far fewer gyms. We eat better now, we work out more. But we live relatively sedentary lives. Only three out of ten households had a car then, compared to seven out of ten now. While 75 per cent of people walked for at least half an hour a day in the 1960s, this is only about 40 per cent now.\n" +
+                "What really stands out, more than the lifestyle differences, is the sharp contrast in the attitudes towards obesity between the two different eras. The 1967 survey found that nine out of ten people had attempted to lose weight in the past year, compared with barely half of adults questioned in 2010. Perhaps most tellingly though, 40 years ago only 7 per cent of those people who considered themselves overweight had failed to do anything about it, compared with nearly half now.\n" +
+                "It would be easy to blame Britain’s fatness on lifestyle changes, but the worst of it is attitude. People just aren’t bothering to lose weight any more. Perhaps obesity is viewed as more normal. But this is also down to the attitude that we doctors increasingly encounter in our consulting rooms: the reluctance of patients to accept that ailments can be blamed on their behaviour, for which they are reluctant to take responsibility.\n" +
+                "Patients blame obesity on the government, cunning food manufacturers, their parents and their genes. They demand fat-loss pills on the NHS and stomach-stapling surgery as a right. In a world where health care is becoming consumerised, patients see themselves as customers. There’s not much demand for hard truths.\n" +
+                "America has severe obesity problems, and seems resigned to them. But Britain has a National Health Service, and therefore a far higher capacity to change. It ought to be easy. Doctors should be required to tell patients a blunt truth: if you’re fat, eat less, exercise more, or both. And if you keep guzzling the tasty treats, you will die earlier. It’s not a disease, it’s a mindset — and that means it can be changed. We doctors need to be a little less understanding, a little more judgmental, and realise that our oath — ‘do no harm’ — must come before our desire to save the feelings of our patients. The truth can be the hardest drug to administer. But holding our tongues, prescribing the fat pills and bankrupting the NHS in the process is the worst solution of all.\n" +
+                "\n",
             headline: 'Obesity Not a Disease'
         }
     }
