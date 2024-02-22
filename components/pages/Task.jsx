@@ -22,9 +22,15 @@ function Task({ }) {
     // Better sizes for the chat-messages
     // TODO: ADD Costume WIDTH and HEIGHT
     return (
-        <div id='task-root' className="flex-col flex">
+        <div id='task-root' className="flex-col flex w-full">
+            {/* The following has been outcommend through an upcoming previouse page where the instrcution to the task has been given */}
+            {/*
             <h1 className="text-center">Use our system to ask questions about the topic in such a way that you would claim to be informed</h1>
-            <SelectedTaskBox topic={taskTopic['taskTopic']} />
+            */}
+            <div className='w-full border-b'>
+                <SelectedTaskBox topic={taskTopic['taskTopic']} />
+            </div>
+            {/* This div contains the messages*/}
             <div className="h-full w-[80%] border mb-2 mt-2 overflow-hidden self-center w-128">
                 <div className="w-full">
                     <div className="min-h-96 overflow-y-scroll overflow-x-hidden p-2.5 break-words" id="chat-messages" ref={chatMessagesRef}>
