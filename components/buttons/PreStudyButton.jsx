@@ -44,19 +44,20 @@ function PreStudyButton() {
           setTaskTopic("Is Obesity a Disease?");
           break;
       }
-      setTime({preStudy: new Date().toLocaleTimeString()})
+      setTime({ preStudy: new Date().toLocaleTimeString() })
       nextPage(1);
     } else {
       setVisbility(true);
     }
   }
+  // This Button needs changes. wraps the row instead of
   return (
-    <>
-      {showUserFeedback && <PreStudyUserFeedback/>}
+    <div className='felx-col text-center'>
+      {showUserFeedback && <PreStudyUserFeedback />}
       <button onClick={() => handleClick()} className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3">
         Continue
       </button>
-    </>
+    </div>
   )
 }
 
