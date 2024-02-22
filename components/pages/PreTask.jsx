@@ -17,7 +17,7 @@ function PreTask() {
         headline = "You previously selected that you did not have a strong opinion about the following topic:"
     }
     return (
-        <div className="flex-coloum">
+        <div className="flex-coloum justify-center text-center px-5">
             <h1>{headline}</h1>
             <SelectedTaskBox topic={taskTopic['taskTopic']}/>
             <p>If you had to explain, which arguments for and against do you see in the following topic. Please explain your thinking.
