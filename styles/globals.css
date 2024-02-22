@@ -39,7 +39,14 @@ body {
     @apply font-semibold;
   }
 }
+/* Need to look for a better solution than this*/
+@layer components {
+  #__next {
+    @apply w-full;
+  }
+}
 
+/* We us this for having the loading animation while streaming the answer */
 /* Costume css loader*/
 
 .loader {
