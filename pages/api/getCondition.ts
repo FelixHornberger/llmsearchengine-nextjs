@@ -13,16 +13,24 @@ const pool = new Pool({
     port: 5432,
     connectionString: process.env.POSTGRES_URL,
     ssl: { rejectUnauthorized: false },
-  });
+});
 
-  const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     try {
-        const result: QueryResult = await pool.query('SELECT condition FROM Participants');
-        res.status(200).json(result.rows);
+      const client = await pool.connect();
+      const result = await client.query('SELECT condition FROM Participants');
+      const participants = result.rows;
+  
+      client.release();
+  
+      console.log('Participants:', participants); // Add this line for logging
+  
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json({ participants });
     } catch (error) {
-        console.error('Error executing query', error);
-        res.status(500).json({ error: 'Internal Server Error' });
+      console.error('Error executing query:', error);
+      res.status(500).json({ error: 'Internal Server Error' });
     }
-};
+  };
 
 export default handler;
