@@ -26,22 +26,24 @@ function Likertscale({ topic, valuation }) {
     }
   };
   return (
-    <div className="flex content-center justify-center inline">
-      <p className="">Strongly Disagree</p>
-      <ul className="flex list-none px-5 place-content-around content-center" id={topic}>
-        {[...Array(7).keys()].map((index) => (
-          <li key={index} className="px-2 scale-150">
-            <input
-              id={`${topic}-answer-${index + 1}-li`}
-              type="radio"
-              name={topic}
-              value={index - 3}
-              onChange={handleRadioChange}
-            />
-          </li>
-        ))}
-      </ul>
-      <p>Strongly Agree</p>
+    <div className='flex justify-center text-center'>
+      <div className="inline-grid sm:flex sm:content-center sm:justify-center">
+        <p className="">Strongly Disagree</p>
+        <ul className="flex list-none px-5 place-content-around content-center inline-grid sm:flex" id={topic}>
+          {[...Array(7).keys()].map((index) => (
+            <li key={index} className="px-2 scale-150">
+              <input
+                id={`${topic}-answer-${index + 1}-li`}
+                type="radio"
+                name={topic}
+                value={index - 3}
+                onChange={handleRadioChange}
+              />
+            </li>
+          ))}
+        </ul>
+        <p>Strongly Agree</p>
+      </div>
     </div>
   );
 }
