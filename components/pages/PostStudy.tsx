@@ -10,7 +10,7 @@ import AgeInput from "../demographics/AgeInput";
 
 export default function PostStudy() {
     return (
-        <>
+        <div className="text-center px-5">
             <p className="mb-3">
                 Thank you for your work so far. For the last step all you have to do is
                 answer some question pretaining to your personal demographics.
@@ -35,6 +35,6 @@ export default function PostStudy() {
                 <Occupation></Occupation>
             </div>
             <SubmitButton></SubmitButton>
-        </>
+        </div>
     );
 };
