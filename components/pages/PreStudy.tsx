@@ -10,7 +10,7 @@ const questionlist = [
 export default function PreStudy() {
   return (
     <>
-      <div className="p-1">
+      <div className="p-1 flex justify-center">
         <h1 className="flex mb-3 text-center">
           Please state to which degree you agree or disagree with the following
           topics
