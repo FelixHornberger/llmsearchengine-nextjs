@@ -29,7 +29,6 @@ export default function Home() {
       elementToReturn = <TaskDescription />
       break;
     case 4:
-      console.log(page)
       elementToReturn = <Task />
       break;
     case 5:
