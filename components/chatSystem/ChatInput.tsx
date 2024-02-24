@@ -104,27 +104,25 @@ function ChatInput() {
                 }
                 );
                 event.currentTarget.value = '';
-                let longMessage = "This is a pretty long message..........................................................................................................................You see?"
-                addMessageZustand({
-                    id: counterChat,
-                    user: "System",
-                    content: longMessage,
-                    timestamp: new Date().toLocaleTimeString()
-                }
-                );
-                setVisbility(true);
-                // if (counterChat === 0) {
-                //     generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, null));
-                // } else {
-                //     generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, messages.messages));
+                // let longMessage = "This is a pretty long message..........................................................................................................................You see?"
+                // addMessageZustand({
+                //     id: counterChat,
+                //     user: "System",
+                //     content: longMessage,
+                //     timestamp: new Date().toLocaleTimeString()
                 // }
+                // );
+                // setVisbility(true);
+                if (counterChat === 0) {
+                    generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, null));
+                } else {
+                    generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, messages.messages));
+                }
 
-                // if (!showButton) {
-                //     setVisbility(true);
-                // } 
+                if (!showButton) {
+                    setVisbility(true);
+                } 
                 setCounterChat(counterChat + 2);
-                console.log("updated counter to: ", counterChat)
-
             }
         }
     }
