@@ -14,8 +14,9 @@ export default function PostTaskButton(){
     const nextPage = usePageStore((state) => state.increse);
     const [showUserFeedback, setVisbility] = useState(false);
 
+    // I dont where 'evalGrade' gets removed, thats why there is the undefined check. I dont know if this a good strat but it should work out.
     const handleClick = () => {
-        if (topicGrads['topicGrading']['evalGrade'] !== ''){
+        if (topicGrads['topicGrading']['evalGrade'] !== '' && topicGrads['topicGrading']['evalGrade'] !== undefined){
             setTime({postTask: new Date().toLocaleTimeString()});
             nextPage(1);
         } else {
@@ -25,7 +26,9 @@ export default function PostTaskButton(){
     return(
         <>
             {showUserFeedback && <PostTaskUserFeedback/>}
-            <button className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3" onClick={() => handleClick()}>Continue</button>
+            <div>
+                <button className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3" onClick={() => handleClick()}>Continue</button>
+            </div>
         </>
     )
 }

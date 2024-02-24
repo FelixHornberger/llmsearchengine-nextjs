@@ -21,7 +21,7 @@ function PreTask() {
             <h1>{headline}</h1>
             <SelectedTaskBox topic={taskTopic['taskTopic']}/>
             <p>If you had to explain, which arguments for and against do you see in the following topic. Please explain your thinking.
-                <br></br>
+                <br/>
                 (It&apos;s okay if you don&apos;t know anything about the subject - you are not forced to write anything.)
             </p>
             <ArgumenTextarea argument={argument} changeArgument={changeArgument}/>

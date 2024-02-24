@@ -17,7 +17,7 @@ export const useTopicGradingStore = create<TopicGradingState>()((set) => ({
       firstTopic: '',
       secondTopic: '',
       thirdTopic: '',
-      evalGrade: ''
+      evalGrade: '',
     },
     setTopicGrade: (newValue) =>
       set((state) => ({

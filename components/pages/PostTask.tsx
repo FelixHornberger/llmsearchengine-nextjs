@@ -16,8 +16,8 @@ export default function PostTask() {
     
     return (
         //prev-Arguments need a fixed max-height and a scrollbar 
-        <div className="flex-col justify-center">
-            <h1>Please state to which degree you agree or disagree with the following topic</h1>
+        <div className="flex flex-col justify-center text-center px-5">
+            <h1 >Please state to which degree you agree or disagree with the following topic</h1>
             <SelectedTaskBox topic={taskTopic['taskTopic']} />
             <Likertscale topic={taskTopic['taskTopic']} valuation={true}/>
             <div className="flex justify-center mt-5">
