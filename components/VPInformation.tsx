@@ -4,8 +4,8 @@ import FirstName from "./vp-information/FirstName";
 import LastName from "./vp-information/LastName";
 import Martikel from "./vp-information/Matrikel";
 
-export default function VPInformation(){
-    return(
+export default function VPInformation() {
+    return (
         <div className="text-center px-5">
             <p className="mb-3">
                 Thank you for your work so far. For the last step all you have to do is
@@ -13,20 +13,20 @@ export default function VPInformation(){
             </p>
             <div className="mb-3">
                 <p>Firstname:</p>
-                <FirstName/>
+                <FirstName />
             </div>
             <div className="mb-3">
                 <p>Lastname:</p>
-                <LastName/>
+                <LastName />
             </div>
             <div className="mb-3">
                 <p>Degree Programm:</p>
-                <DegreeProgramm/>
+                <DegreeProgramm />
             </div>
             <div className="mb-3">
                 <p>Martikel:</p>
-                <Martikel/>
+                <Martikel />
             </div>
-            <SubmitVPButton/>
+            <SubmitVPButton />
         </div>);
 }

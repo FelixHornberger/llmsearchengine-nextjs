@@ -10,7 +10,7 @@ export function selectTask(obj) {
         console.log("2: ", topics)
         if (topics.length === 0) {
             console.log("3: ", topics)
-        // If there are no mild, -2, or 2 topics, check for -3 or 3
+            // If there are no mild, -2, or 2 topics, check for -3 or 3
             topics = Object.keys(obj).filter(key => obj[key] === -3 || obj[key] === 3);
         }
     }

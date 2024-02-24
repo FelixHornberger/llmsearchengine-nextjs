@@ -6,7 +6,7 @@ import { useTopicGradingStore } from '@/src/topicgrades'
 function Likertscale({ topic, valuation }) {
 
   const setTopicGrade = useTopicGradingStore((state) => state.setTopicGrade)
-  
+
   const handleRadioChange = (e) => {
     const selectedValue = parseInt(e.target.value, 10);
     if (!valuation) {

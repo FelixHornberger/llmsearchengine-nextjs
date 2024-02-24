@@ -5,13 +5,13 @@ import { useTimeDataStore } from '@/src/time';
 
 import React from 'react'
 
-const TaskButton = ({}) => {
+const TaskButton = ({ }) => {
 
     const setTime = useTimeDataStore((state) => state.setTimeData);
     const nextPage = usePageStore((state) => state.increse);
 
     const handleClick = () => {
-        setTime({task: new Date().toLocaleTimeString()});
+        setTime({ task: new Date().toLocaleTimeString() });
         nextPage(1);
     }
     return (

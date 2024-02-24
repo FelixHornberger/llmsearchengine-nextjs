@@ -6,34 +6,34 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import { Pool, QueryResult } from 'pg';
 
 const pool = new Pool({
-    user: process.env.POSTGRES_USER,
-    host: process.env.POSTGRES_HOST,
-    database: process.env.POSTGRES_DATABASE,
-    password: process.env.POSTGRES_PASSWORD,
-    port: 5432,
-    connectionString: process.env.POSTGRES_URL,
-    ssl: { rejectUnauthorized: false },
+  user: process.env.POSTGRES_USER,
+  host: process.env.POSTGRES_HOST,
+  database: process.env.POSTGRES_DATABASE,
+  password: process.env.POSTGRES_PASSWORD,
+  port: 5432,
+  connectionString: process.env.POSTGRES_URL,
+  ssl: { rejectUnauthorized: false },
 });
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-    try {
-      const client = await pool.connect();
-      const result = await client.query('SELECT ARRAY[ \
+  try {
+    const client = await pool.connect();
+    const result = await client.query('SELECT ARRAY[ \
                                         COUNT(CASE WHEN condition = \'pro\' THEN 1 END), \
                                         COUNT(CASE WHEN condition = \'neutral\' THEN 1 END), \
                                         COUNT(CASE WHEN condition = \'con\' THEN 1 END) \
                                         ] AS condition_counts \
                                     FROM Participants;');
-      const conditions = result.rows;
-  
-      client.release();
-      
-      res.setHeader('Content-Type', 'application/json');
-      res.status(200).json({ conditions });
-    } catch (error) {
-      console.error('Error executing query:', error);
-      res.status(500).json({ error: 'Internal Server Error' });
-    }
-  };
+    const conditions = result.rows;
+
+    client.release();
+
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json({ conditions });
+  } catch (error) {
+    console.error('Error executing query:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};
 
 export default handler;

@@ -2,21 +2,21 @@
 
 const prompt_stance: { [key: string]: string } = {
     pro: 'You are a generative information retrieval system (IR system) that has the task of creating well-rounded opinions by carefully presenting arguments from different points of view. Your answers must endeavour to explain to the user the arguments given in the sources. To ensure the credibility and relevance of the information provided, you must use only the following pre-selected sources. \n' +
-        '$SOURCES$'+
+        '$SOURCES$' +
         'These sources have been selected for their reliability and comprehensiveness. When formulating your answer, explicitly refer to these sources to support your arguments. This not only increases the credibility of your answer, but also gives users the opportunity to study the original materials to gain further insight.\n' +
         'When answering the user\'s question, make sure that you:\n' +
         '- Present arguments from different perspectives to ensure a comprehensive and unbiased view.\n' +
         '- In your answer, refer directly to the sources provided and cite them appropriately to enable the user to check them.\n' +
         '- Maintain your position given in the sources.\n',
     neutral: 'You are a Generative Information Retrieval (IR) system tasked with constructing well-rounded opinions by meticulously presenting arguments from multiple viewpoints. Your responses must strive for neutrality, offering a balanced overview that reflects diverse perspectives on the subject matter. To ensure the credibility and relevance of the information provided, you are required to exclusively utilize the following pre-selected sources. \n' +
-        '$SOURCES$'+
+        '$SOURCES$' +
         'These sources have been chosen for their reliability and depth of coverage. When formulating your response, explicitly reference these sources to substantiate your arguments. This will not only enhance the credibility of your response but also provide users with the opportunity to explore the original materials for further insight.\n' +
         'When answering the user\'s question, please ensure that you:\n' +
         '- Present arguments from various perspectives to ensure a comprehensive and unbiased view.\n' +
         '- Reference the specified sources directly within your answer, citing them appropriately to allow for user verification.\n' +
         '- Maintain neutrality throughout your response, avoiding any form of bias or preference towards a particular viewpoint.\n',
     con: 'You are a generative information retrieval system (IR system) that has the task of creating well-rounded opinions by carefully presenting arguments from different points of view. Your answers must endeavour to explain to the user the arguments given in the sources. To ensure the credibility and relevance of the information provided, you must use only the following pre-selected sources. \n' +
-        '$SOURCES$'+
+        '$SOURCES$' +
         'These sources have been selected for their reliability and comprehensiveness. When formulating your answer, explicitly refer to these sources to support your arguments. This not only increases the credibility of your answer, but also gives users the opportunity to study the original materials to gain further insight.\n' +
         'When answering the user\'s question, make sure that you:\n' +
         '- Present arguments from different perspectives to ensure a comprehensive and unbiased view.\n' +
@@ -38,7 +38,7 @@ interface TopicStructure {
     };
 }
 
-const students_topic:TopicStructure = {
+const students_topic: TopicStructure = {
     pro: {
         one: {
             link: 'https://schoolwearassociation.co.uk/highlighting-uniforms-contribution-to-childrens-wellbeing/',
@@ -57,7 +57,7 @@ const students_topic:TopicStructure = {
                 '\n',
             headline: 'Highlighting Uniforms contribution to children’s wellbeing\n'
         },
-        two:{
+        two: {
             link: 'https://www.walesonline.co.uk/news/education/children-wear-school-uniforms-21448440',
             text: 'Why do children have to wear school uniforms?\n' +
                 'A new law has been introduced to help cut uniform costs\n' +
@@ -113,7 +113,7 @@ const students_topic:TopicStructure = {
                 '\n',
             headline: 'Britain\'s obsession with school uniform reinforces social divisions | Rhiannon Lucy Cosslett\n'
         },
-        two:{
+        two: {
             link: 'https://www.counselling-directory.org.uk/blog/2018/09/03/school-uniforms-mental-health',
             text: 'How school uniforms impact mental health\n' +
                 'Studies looking into the impact of school uniforms on mental health have shown, for the most part, that they are indeed beneficial. A study commissioned by the Schoolwear Association involved a number of student focus groups and was conducted with the intention of finding out their perceptions of wearing a uniform.\n' +
@@ -131,7 +131,7 @@ const students_topic:TopicStructure = {
     }
 }
 
-const property_rights_topic:TopicStructure = {
+const property_rights_topic: TopicStructure = {
     pro: {
         one: {
             link: 'https://www.theglobalipcenter.com/why-are-intellectual-property-rights-important/',
@@ -168,7 +168,7 @@ const property_rights_topic:TopicStructure = {
                 '\n',
             headline: 'Why Are Intellectual Property Rights Important'
         },
-        two:{
+        two: {
             link: 'https://www.gov.uk/government/publications/ip-basics/ip-basics',
             text: 'IP Basics\n' +
                 'The new UK National Security and Investment Act 2021 comes into effect fully from 4 January 2022. Businesses and investors should check the guidance to understand what types of acquisitions are covered by the new rules.\n' +
@@ -366,7 +366,7 @@ const property_rights_topic:TopicStructure = {
                 '\n',
             headline: 'It’s time to consider a patent reprieve for COVID vaccines\n'
         },
-        two:{
+        two: {
             link: 'https://www.hrw.org/report/2020/10/29/whoever-finds-vaccine-must-share-it/strengthening-human-rights-and-transparency',
             text: '“Whoever Finds the Vaccine Must Share It”\n' +
                 'Strengthening Human Rights and Transparency Around Covid-19 Vaccines\n' +
@@ -707,7 +707,7 @@ const property_rights_topic:TopicStructure = {
     }
 }
 
-const obesity_topic: TopicStructure= {
+const obesity_topic: TopicStructure = {
     pro: {
         one: {
             link: 'https://www.theglobeandmail.com/life/health-and-fitness/health-advisor/why-we-should-consider-obesity-a-disease/article16370893/',
@@ -731,7 +731,7 @@ const obesity_topic: TopicStructure= {
                 '\n',
             headline: 'Why we should consider obesity a disease\n'
         },
-        two:{
+        two: {
             link: 'https://www.usnews.com/debate-club/should-the-american-medical-association-have-classified-obesity-as-a-disease/call-obesity-what-it-is-a-disease',
             text: 'Call Obesity What It Is: a Disease\n' +
                 'The American Medical Association\'s recognition of obesity as a disease aligns perfectly with the science of obesity prevention and treatment. By acknowledging that obesity is a health problem, not an image or character problem, the AMA joins obesity experts on the path to resolve this health challenge based on the science and evidence of what works.\n' +
@@ -756,7 +756,7 @@ const obesity_topic: TopicStructure= {
                 '\n',
             headline: 'Obesity is not a disease'
         },
-        two:{
+        two: {
             link: 'https://www.spectator.co.uk/article/obesity-is-not-a-disease',
             text: "Well, what diets have you tried so far?’ asked the GP, flicking through the patient’s notes. I was an innocent trainee doctor on my general practice placement at the time and watched the interaction carefully, sensing a row was about to ensue. ‘Look, I don’t want to go on a diet, I want you to prescribe me these,’ snapped the patient, bringing out a neatly folded page she had torn out of a magazine. The GP, rolling his eyes at me, took the paper but didn’t read it. I suspected he’d read it before. This was yet another example of what’s becoming a very British epidemic: obesity being self-diagnosed as disease.\n" +
                 "The doctor attempted to explain that tablets really aren’t suitable in her case. As well as having some potentially nasty side effects, they’re expensive to prescribe, and don’t offer a long-term solution. This was clearly not what the woman wanted to hear. ‘Fine then, don’t help me, see if I care. I’ll get my sister to get them off her GP — he gives her whatever she wants’; and she stormed out. It struck me as bizarre that while some people using the NHS are dangerously malnourished, other people are desperate to take tablets to ensure that their food passes through their body unabsorbed, while the taxpayer foots the bill.\n" +
@@ -791,9 +791,9 @@ interface Message {
 
 
 
-function getSources(condition: string, taskTopic: string){
+function getSources(condition: string, taskTopic: string) {
     if (condition != "neutral") {
-        switch (taskTopic){
+        switch (taskTopic) {
             case 'Should students wear school uniform?':
                 return students_topic[condition]
                 break;
@@ -803,10 +803,10 @@ function getSources(condition: string, taskTopic: string){
             case 'Is Obesity a Disease?':
                 return obesity_topic[condition]
                 break;
-            }
+        }
     }
-    else{
-        switch (taskTopic){
+    else {
+        switch (taskTopic) {
             case 'Should students wear school uniform?':
                 return students_topic
                 break;
@@ -820,15 +820,15 @@ function getSources(condition: string, taskTopic: string){
     }
 }
 
-export function generatePrompt(userInput:string, taskTopic:string, condition:string, messages:Message[] | null ) {
-    let prompt =prompt_stance[condition];
-    prompt = prompt.replace('$SOURCES$',JSON.stringify(getSources(condition, taskTopic)))
-    if (messages !== null){
+export function generatePrompt(userInput: string, taskTopic: string, condition: string, messages: Message[] | null) {
+    let prompt = prompt_stance[condition];
+    prompt = prompt.replace('$SOURCES$', JSON.stringify(getSources(condition, taskTopic)))
+    if (messages !== null) {
         prompt += '\n The following is the chat history:'
-        for (let message of messages){
+        for (let message of messages) {
             prompt += `\n ${message['user']}: ${message['content']} \ndate of message: ${message['timestamp']}`;
         }
     }
     prompt += '\n This is the prompt of the user: ' + userInput;
-    return prompt +='Please proceed with answering the question as described above, adhering to the guidelines , comprehensive reporting and referencing.\n'
+    return prompt += 'Please proceed with answering the question as described above, adhering to the guidelines , comprehensive reporting and referencing.\n'
 }

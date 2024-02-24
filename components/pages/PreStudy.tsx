@@ -18,12 +18,12 @@ export default function PreStudy() {
       </div>
       <div className="flex flex-col">
         <div className="flex flex-col w-3/5 place-self-center">
-          <QuestionElement question={questionlist[0]}/>
-          <QuestionElement question={questionlist[1]}/>
-          <QuestionElement question={questionlist[2]}/>
+          <QuestionElement question={questionlist[0]} />
+          <QuestionElement question={questionlist[1]} />
+          <QuestionElement question={questionlist[2]} />
         </div>
       </div>
-      <PreStudyButton/>
+      <PreStudyButton />
     </>
   );
 }

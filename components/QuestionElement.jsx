@@ -1,6 +1,6 @@
 import Likertscale from "./Likertscale";
 
-function QuestionElement({question}) {
+function QuestionElement({ question }) {
     // How do we struct this right? I mean what is the best solution for mobile devices? Change Likert to Dropdown menue?
     return (
         <div className="flex-col border p-5 mb-3">

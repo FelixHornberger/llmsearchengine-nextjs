@@ -13,33 +13,33 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 
-  const {page} = usePageStore();
+  const { page } = usePageStore();
   let elementToReturn: JSX.Element | null = null;
-  switch(page){
+  switch (page) {
     case 0:
-      elementToReturn =  <IntroPage nextPage={undefined} addTime={undefined} />;
+      elementToReturn = <IntroPage nextPage={undefined} addTime={undefined} />;
       break;
     case 1:
-      elementToReturn = <PreStudy/>
+      elementToReturn = <PreStudy />
       break;
     case 2:
-      elementToReturn = <PreTask/>;
+      elementToReturn = <PreTask />;
       break;
     case 3:
-      elementToReturn = <TaskDescription/>
+      elementToReturn = <TaskDescription />
       break;
     case 4:
       console.log(page)
-      elementToReturn = <Task/>
+      elementToReturn = <Task />
       break;
     case 5:
-      elementToReturn = <PostTask/>
+      elementToReturn = <PostTask />
       break;
-    case 6: 
-      elementToReturn = <PostStudy/>
+    case 6:
+      elementToReturn = <PostStudy />
       break;
     case 7:
-      elementToReturn = <EndPage/>
+      elementToReturn = <EndPage />
       break;
   }
 

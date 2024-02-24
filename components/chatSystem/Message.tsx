@@ -2,10 +2,10 @@ function Message({ id, user, message }: { id: number, user: string, message: str
 
     const formattedMessage = message.replace(/\n/g, '<br>');
 
-    return(
+    return (
         <div className="mb-2.5" id={`message-${id}`}>
             <span className="font-semibold">{user}:</span>
-            <br/>
+            <br />
             <span className="m-px break-words" dangerouslySetInnerHTML={{ __html: formattedMessage }}></span>
         </div>
     )

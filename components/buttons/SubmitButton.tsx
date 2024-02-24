@@ -1,5 +1,5 @@
 'use client'
-import { useTimeDataStore } from '@/src/time'; 
+import { useTimeDataStore } from '@/src/time';
 import { useAgeStore } from "@/src/age";
 import { useLevelOfEducationStore } from "@/src/education";
 import { useGenderStore } from '@/src/gender';
@@ -12,7 +12,7 @@ import { usePageStore } from '@/src/pagecounter';
 
 
 export default function SubmitButton() {
-    
+
     const setTime = useTimeDataStore((state) => state.setTimeData);
     const nextPage = usePageStore((state) => state.increse)
     const ageStore = useAgeStore();
@@ -29,11 +29,11 @@ export default function SubmitButton() {
             console.log("TEST")
         }
 
-        if (occupation.includes('student')){
+        if (occupation.includes('student')) {
             setVP(true);
         }
 
-        setTime({postStudy: new Date().toLocaleTimeString()});
+        setTime({ postStudy: new Date().toLocaleTimeString() });
         nextPage(1);
         console.log("Sumbit needs a connection to the db")
     }

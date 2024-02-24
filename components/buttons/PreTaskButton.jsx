@@ -8,7 +8,7 @@ function PreTaskButton() {
     const setTime = useTimeDataStore((state) => state.setTimeData);
     const nextPage = usePageStore((state) => state.increse);
     const handleClick = () => {
-        setTime({preTask: new Date().toLocaleTimeString()});
+        setTime({ preTask: new Date().toLocaleTimeString() });
         nextPage(1);
     }
     return (

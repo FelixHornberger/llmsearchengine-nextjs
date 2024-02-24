@@ -6,10 +6,11 @@
 
 import TaskDescriptionButton from "../buttons/TaskDescirptionButton";
 
-export default function TaskDescription(){
-    return(
-    <div className="flex flex-col text-center justify-center">
-        <p>Lorem Ipsum tralla</p>
-        <TaskDescriptionButton/>
-    </div>);
+export default function TaskDescription() {
+    return (
+        <div className="flex flex-col text-center justify-center">
+            <p>Lorem Ipsum tralla</p>
+            <TaskDescriptionButton />
+        </div>
+    );
 }

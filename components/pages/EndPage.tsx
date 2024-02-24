@@ -1,5 +1,5 @@
 import { useOccupationStore } from "@/src/occupation";
-import { useVPStore } from "@/src/vp"; 
+import { useVPStore } from "@/src/vp";
 import VPInformation from "../VPInformation";
 
 /*
@@ -13,7 +13,7 @@ export default function EndPage() {
     const vpStore = useVPStore()
     let showVP = vpStore['vp'];
 
-    return(
+    return (
         <>
             <div className="text-center place-items-center mb-3">
                 <h1>Thank you for participating!</h1>
@@ -21,17 +21,17 @@ export default function EndPage() {
             <div className="px-5 flex justify-center">
                 <div className="task-box mb-3 max-w-prose place-items-center px-5 border border-white">
                     <p className="text-padding text-center">
-                    Your SurveyID is: {}
-                    <br/>
-                    If you have any questions or comments about the study, please do not hesitate to contact us.
-                    <br/>
-                    Noah Meissner: noah.meissner@stud.uni-regensburg.de
-                    <br/>
-                    Felix Hornberger: Felix.Hornberger@stud.uni-regensburg.de
+                        Your SurveyID is: { }
+                        <br />
+                        If you have any questions or comments about the study, please do not hesitate to contact us.
+                        <br />
+                        Noah Meissner: noah.meissner@stud.uni-regensburg.de
+                        <br />
+                        Felix Hornberger: Felix.Hornberger@stud.uni-regensburg.de
                     </p>
                 </div>
             </div>
-            {showVP && <VPInformation/>}
+            {showVP && <VPInformation />}
         </>
     );
 

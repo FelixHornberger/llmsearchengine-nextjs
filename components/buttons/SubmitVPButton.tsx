@@ -7,7 +7,7 @@ import { useVPStore } from "@/src/vp";
 export default function SubmitVPButton() {
 
     const setVP = useVPStore((state) => state.setVP);
-    
+
     const handleclick = () => {
         setVP(false);
         console.log("Sumbit needs a connection to the db")
