@@ -3,7 +3,6 @@ import { useOccupationStore } from "@/src/occupation";
 
 export default function Occupation(){
     const setOccupation = useOccupationStore((state) => state.setOccupation)
-    
     return(
     <input
         id="occupation"
