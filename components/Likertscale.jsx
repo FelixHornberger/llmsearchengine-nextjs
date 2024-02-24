@@ -29,7 +29,7 @@ function Likertscale({ topic, valuation }) {
     <div className='flex justify-center text-center'>
       <div className="inline-grid sm:flex sm:content-center sm:justify-center">
         <p className="">Strongly Disagree</p>
-        <ul className="flex list-none px-5 place-content-around content-center inline-grid sm:flex" id={topic}>
+        <ul className="list-none px-5 place-content-around place-items-center inline-grid sm:flex" id={topic}>
           {[...Array(7).keys()].map((index) => (
             <li key={index} className="px-2 scale-150">
               <input
