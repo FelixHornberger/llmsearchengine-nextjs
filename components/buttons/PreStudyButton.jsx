@@ -7,19 +7,36 @@ import { useTaskTopicStore } from '@/src/tasktopic';
 import { useTimeDataStore } from '@/src/time';
 import { useState } from 'react';
 import PreStudyUserFeedback from '../PreStudyUserFeedback';
+import { useConditionStore } from '@/src/condition';
 
-function PreStudyButton() {
+// This could be its own file!
+function returnCondition(arr) {
+  const [first, middle, last] = arr;
+  if (first === middle && middle === last) {
+    const randomIndex = Math.floor(Math.random() * 3);
+    return ["pro", "con", "neutral"][randomIndex];
+  } else if (first <= middle && first <= last) {
+    return "pro";
+  } else if (middle <= first && middle <= last) {
+    return "neutral";
+  } else {
+    return "con";
+  }
+}
+
+export default function PreStudyButton() {
 
   const topicGrads = useTopicGradingStore();
+  const conditionStore = useConditionStore();
   const nextPage = usePageStore((state) => state.increse);
   const setMildness = useMildnessStore((state) => state.setMildness);
   const setTaskTopic = useTaskTopicStore((state) => state.setTaskTopic);
-  const taskTopic = useTaskTopicStore();
+  const setCondition = useConditionStore((state) => state.setCondition);
   const setTime = useTimeDataStore((state) => state.setTimeData);
 
   const [showUserFeedback, setVisbility] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = async () => {
     if (topicGrads['topicGrading']['firstTopic'] !== '' &&
       topicGrads['topicGrading']['secondTopic'] !== '' &&
       topicGrads['topicGrading']['thirdTopic'] !== '') {
@@ -45,7 +62,18 @@ function PreStudyButton() {
           break;
       }
       setTime({ preStudy: new Date().toLocaleTimeString() })
-      nextPage(1);
+      try {
+        const response = await fetch('api/getCondition');
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        // Todo make this look smoother.
+        setCondition(returnCondition(data.conditions[0]['condition_counts']))
+        nextPage(1);
+      } catch (error) {
+        console.error('Error fetching data:', error.message);
+      }
     } else {
       setVisbility(true);
     }
@@ -61,4 +89,3 @@ function PreStudyButton() {
   )
 }
 
-export default PreStudyButton;
