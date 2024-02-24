@@ -103,28 +103,37 @@ function ChatInput(){
                     timestamp: new Date().toLocaleTimeString()}
                 );
                 event.currentTarget.value = '';
-                if (counterChat === 0) {
-                    generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, null));
-                } else {
-                    generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, messages.messages));
-                }
+                let longMessage = "This is a pretty long message..........................................................................................................................You see?"
+                addMessageZustand({
+                    id: counterChat, 
+                    user: "System", 
+                    content:longMessage,
+                    timestamp: new Date().toLocaleTimeString()}
+                );
+                setVisbility(true);
+                // if (counterChat === 0) {
+                //     generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, null));
+                // } else {
+                //     generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, messages.messages));
+                // }
                 
-                if (!showButton) {
-                    setVisbility(true);
-                } 
+                // if (!showButton) {
+                //     setVisbility(true);
+                // } 
                 setCounterChat(counterChat + 2);
                 console.log("updated counter to: ", counterChat)
+                
             }
         }
     }
     return(
-        <div className="justify-center items-center flex-col">
-            <div className="justify-center items-center flex flex-col">
+        <div className="justify-center items-center flex-col w-full mb-2.5 bg-gray-700">
+            <div className="justify-center items-center flex flex-col px-2.5">
                 <div>
                     {loading && <Loader/>}
                 </div>
                 <textarea
-                    className="bg-transparent w-[80%] border-white border border-primary focus:outline-none shadow-xl focus:ring-1
+                    className="bg-transparent w-full mx-5 border-white border focus:outline-none shadow-xl focus:ring-1
                     rounded-lg mt-3"
                     placeholder="Type a message..."
                     id="message-input"
