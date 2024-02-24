@@ -127,13 +127,13 @@ function ChatInput(){
         }
     }
     return(
-        <div className="justify-center items-center flex-col w-full mb-2.5 bg-gray-700">
+        <div className="justify-center items-center flex-col w-full pb-2.5 bg-gray-700 sticky bottom-0">
             <div className="justify-center items-center flex flex-col px-2.5">
                 <div>
                     {loading && <Loader/>}
                 </div>
                 <textarea
-                    className="bg-transparent w-full mx-5 border-white border focus:outline-none shadow-xl focus:ring-1
+                    className="bg-transparent w-full sm:w-[70%] mx-5 border-white border focus:outline-none shadow-xl focus:ring-1
                     rounded-lg mt-3"
                     placeholder="Type a message..."
                     id="message-input"
