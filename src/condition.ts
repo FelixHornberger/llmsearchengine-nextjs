@@ -2,10 +2,10 @@ import { create } from 'zustand'
 
 interface conditionState {
     condition: string;
-    setlevelOfEducation: (by: string) => void;
+    setCondition: (by: string) => void;
 }
 
 export const useConditionStore = create<conditionState>()((set) =>({
     condition: "",
-    setlevelOfEducation: (by) => set(({condition: by}))
+    setCondition: (by) => set(({condition: by}))
 }));
