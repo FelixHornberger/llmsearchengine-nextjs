@@ -6,6 +6,8 @@ import { usePageStore } from "@/src/pagecounter";
 import PreStudy from "@/components/pages/PreStudy";
 import PreTask from "@/components/pages/PreTask";
 import PostStudy from "@/components/pages/PostStudy";
+import EndPage from "@/components/pages/EndPage";
+import TaskDescription from "@/components/pages/TaskDescription";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,14 +26,21 @@ export default function Home() {
       elementToReturn = <PreTask/>;
       break;
     case 3:
-      elementToReturn = <Task/>
+      elementToReturn = <TaskDescription/>
       break;
     case 4:
-      elementToReturn = <PostTask></PostTask>
+      console.log(page)
+      elementToReturn = <Task/>
       break;
-    case 5: 
-    elementToReturn = <PostStudy></PostStudy>
-    break;
+    case 5:
+      elementToReturn = <PostTask/>
+      break;
+    case 6: 
+      elementToReturn = <PostStudy/>
+      break;
+    case 7:
+      elementToReturn = <EndPage/>
+      break;
   }
 
   return (

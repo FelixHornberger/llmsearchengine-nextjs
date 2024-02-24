@@ -1,6 +1,38 @@
+import { useOccupationStore } from "@/src/occupation";
+import { useVPStore } from "@/src/vp"; 
+import VPInformation from "../VPInformation";
+
 /*
-    This file will contain the end-screen
     TODO:
-    Writing a text in which we thank the users for being part of the study. Here we show the users their SurveyID, as we have written in the information consent that users can contact us if their data should be deleted.
-    In addition, we have to define a new state called StudentStore (boolean). If this is true, we show users the possibility to get VP hours.
+    FIll in SurveyID, as we have written in the information consent that users can contact us if their data should be deleted.
+    Turn showVP into a Zustand. The logic of the Zustand needs to be moved to the Submition Buttons;
 */
+
+export default function EndPage() {
+    const occupationStore = useOccupationStore();
+    const vpStore = useVPStore()
+    let showVP = vpStore['vp'];
+
+    return(
+        <>
+            <div className="text-center place-items-center mb-3">
+                <h1>Thank you for participating!</h1>
+            </div>
+            <div className="px-5 flex justify-center">
+                <div className="task-box mb-3 max-w-prose place-items-center px-5 border border-white">
+                    <p className="text-padding text-center">
+                    Your SurveyID is: {}
+                    <br/>
+                    If you have any questions or comments about the study, please do not hesitate to contact us.
+                    <br/>
+                    Noah Meissner: noah.meissner@stud.uni-regensburg.de
+                    <br/>
+                    Felix Hornberger: Felix.Hornberger@stud.uni-regensburg.de
+                    </p>
+                </div>
+            </div>
+            {showVP && <VPInformation/>}
+        </>
+    );
+
+}

@@ -1,14 +1,15 @@
 'use client'
+import { useVPStore } from "@/src/vp";
 
-// TODO: Add all zustaende, generate Userfeedback
-// AGE, Education, Gender, Occupation (Wee need to check if age is numeric)
+// TODO: Need a validation logic for this
 
 
 export default function SubmitVPButton() {
+
+    const setVP = useVPStore((state) => state.setVP);
     
-
-
     const handleclick = () => {
+        setVP(false);
         console.log("Sumbit needs a connection to the db")
     }
     return (
