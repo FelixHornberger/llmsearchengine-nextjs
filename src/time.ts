@@ -4,6 +4,7 @@ interface TimeData {
     start: string;
     preStudy: string;
     preTask: string;
+    taskDescription: string;
     task: string;
     postTask: string;
     postStudy: string;
@@ -19,6 +20,7 @@ export const useTimeDataStore = create<TimeDataState>()((set) => ({
         start: '',
         preStudy: '',
         preTask: '',
+        taskDescription:'',
         task: '',
         postTask: '',
         postStudy: '',
