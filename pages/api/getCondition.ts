@@ -18,15 +18,18 @@ const pool = new Pool({
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     try {
       const client = await pool.connect();
-      const result = await client.query('SELECT condition FROM Participants');
-      const participants = result.rows;
+      const result = await client.query('SELECT ARRAY[ \
+                                        COUNT(CASE WHEN condition = \'pro\' THEN 1 END), \
+                                        COUNT(CASE WHEN condition = \'neutral\' THEN 1 END), \
+                                        COUNT(CASE WHEN condition = \'con\' THEN 1 END) \
+                                        ] AS condition_counts \
+                                    FROM Participants;');
+      const conditions = result.rows;
   
       client.release();
-  
-      console.log('Participants:', participants); // Add this line for logging
-  
+      
       res.setHeader('Content-Type', 'application/json');
-      res.status(200).json({ participants });
+      res.status(200).json({ conditions });
     } catch (error) {
       console.error('Error executing query:', error);
       res.status(500).json({ error: 'Internal Server Error' });
