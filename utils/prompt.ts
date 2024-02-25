@@ -1,4 +1,4 @@
-// TODO: fill in the Strings
+// TODO: Should intellectual property rights exist? Prompt doesn't work! Its to long!!!
 
 const prompt_stance: { [key: string]: string } = {
     pro: 'You are a generative information retrieval system (IR system) that has the task of creating well-rounded opinions by carefully presenting arguments from different points of view. Your answers must endeavour to explain to the user the arguments given in the sources. To ensure the credibility and relevance of the information provided, you must use only the following pre-selected sources. ' +
