@@ -9,13 +9,7 @@ function Intro({ nextPage, addTime }) {
             <div className="px-5 flex justify-center">
                 <div className="task-box mb-3 max-w-prose place-items-center px-5 border border-white">
                     <p className="text-padding text-center">
-                        The purpose of this research is to investigate how Generative Information Retrieval systems and their
-                        source materials influence users&apos attitudes and interaction patterns regarding contentious topics. The
-                        goal of this study is to analyze how the Generative Information Retrieval systems and answers
-                        provided by GIR System (and the way these are generated) affect users&apos perspectives and engagement
-                        behaviors on controversial subjects. Your participation will help us achieve this research goal. The
-                        results of this research may be presented at scientific or professional meetings or published in
-                        scientific proceedings and journals.
+                    You are invited to take part in an online study investigating behaviour with a generative (chat-based) information system. The study will be conducted by Noah Meißner and Felix Hornberger and supervised by Dr David Elsweiler from the University of Regensburg. The study with an expected 69 participants will take place from 12.02.2024 to 01.03.2024. The duration of the study is 15 minutes. Students at the University of Regensburg will receive 0.25 credit hours. The study can only be started once and should be completed in one go.
                     </p>
                 </div>
             </div>
