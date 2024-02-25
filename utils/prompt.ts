@@ -61,7 +61,6 @@ const students_topic: TopicStructure = {
             link: 'https://www.walesonline.co.uk/news/education/children-wear-school-uniforms-21448440',
             text: 'Why do children have to wear school uniforms?' +
                 'A new law has been introduced to help cut uniform costs' +
-                '' +
                 'Parents across the country are stocking up on back-to-school uniform essentials (Image: Robin Worrall)' +
                 'As kids prepare to return from their summer holidays for another - hopefully less disrupted - school year, parents across the country are stocking up on all those back-to-school essentials.' +
                 'This includes, of course, getting them suited and booted with everything they need for their school uniform.' +
@@ -71,7 +70,6 @@ const students_topic: TopicStructure = {
                 'When were school uniforms introduced?' +
                 'One of the earliest forerunners of the modern school uniform was introduced by Christ’s Hospital, founded in 1552 to provide an education to fatherless and destitute children. Pupils there today still wear similar blue coats, breeches and yellow socks.' +
                 'However, it wasn’t until the 19th century when uniforms were widely adopted by schools. Eton College, for example, introduced its famous Eton suit in around 1820.' +
-                '' +
                 'Many schools have toughened up their uniform codes in recent decades (Image: Getty)' +
                 'Roughly a century later - in the 1920s - uniforms started to become compulsory for girls as well. Many school uniforms became less stuffy in the 1970s, with sweaters and polo shirts replacing more formal attire.' +
                 'In more recent decades, though, a lot of schools have again toughened up their uniform codes.' +
@@ -83,10 +81,8 @@ const students_topic: TopicStructure = {
                 'Some parents have expressed concern about the cost of school uniforms, which they say is becoming increasingly expensive.' +
                 'Figures compiled by the Department for Education in 2015 found that the average cost of school uniforms came to nearly £213 per child per year. But some families report that their uniform costs well exceed this, topping £300 for some schools. ' +
                 'A new law recently approved by Parliament aims to tackle this problem. This is the Education (Guidance About Costs of School Uniforms) Act, which became law in April 2021. ' +
-                '' +
                 'New legislation is intended to help parents by cutting school uniform costs (Image: David Jones/PA Wire)' +
                 'SIMILAR ARTICLES TO THIS' +
-                '' +
                 'Among other things, the legislation requires schools to ensure that contracts with uniform suppliers are competitive and transparent, and to consider introducing cheaper high-street alternatives rather than expensive branded items.' +
                 'It also requires schools to ensure parents have clear information on uniform policies. It’s not clear exactly how much the law will save parents, but it’s hoped it will reduce uniform costs.',
             headline: 'Why do children have to wear school uniforms?'
@@ -143,24 +139,20 @@ const property_rights_topic: TopicStructure = {
                 '• Jobs in IP-intensive industries are expected to grow faster over the next decade than the national average.' +
                 '• The average worker in an IP-intensive industry earned about 30% more than his counterpart in a non-IP industry' +
                 '• The average salary in IP-intensive industries pay $50,576 per worker compared to the national average of $38,768.' +
-                ' ' +
                 'Intellectual Property Drives Economic Growth and Competitiveness' +
                 '• America’s IP is worth $5.8 trillion, more than the nominal GDP of any other country in the world.' +
                 '• IP-intensive industries account for over 1/3– or 38%– of total U.S. GDP.' +
                 '• These industries also have 72.5% higher output per worker than the national average, valued at $136,556 per worker.' +
                 '• IP accounts for 74% of all U.S. exports- which amounts to nearly $1 trillion.' +
-                '• The direct and indirect economic impacts of innovation are overwhelming, acounting for more than 40% of U.S. economic growth and employment.' +
-                ' ' +
+                '• The direct and indirect economic impacts of innovation are overwhelming, acounting for more than 40% of U.S. economic growth and employment.' +            
                 'Strong and Enforced Intellectual Property Rights Protect Consumers and Families' +
                 '• Strong IP rights help consumers make an educated choice about the safety, reliability, and effectiveness of their purchases.' +
                 '• Enforced IP rights ensure products are authentic, and of the high-quality that consumers recognize and expect.' +
-                '• IP rights foster the confidence and ease of mind that consumers demand and markets rely on.' +
-                ' ' +
+                '• IP rights foster the confidence and ease of mind that consumers demand and markets rely on.' +            
                 'Intellectual Property Helps Generate Breakthrough Solutions to Global Challenges' +
                 '• Nearly all of the 300 products on the World Health Organization’s Essential Drug List, which are critical to saving or improving people’s lives around the globe, came from the R&D-intensive pharmaceutical industry that depends on patent protections.' +
                 '• Innovative agricultural companies are creating new products to help farmers produce more and better products for the world’s hungry while reducing the environmental impact of agriculture.' +
                 '• IP-driven discoveries in alternative energy and green technologies will help improve energy security and address climate change.' +
-                ' ' +
                 'Intellectual Property Rights Encourage Innovation and Reward Entrepreneurs' +
                 '• Risk and occasional failure are the lifeblood of the innovation economy. IP rights incentivize entrepreneurs to keep pushing for new advances in the face of adversity.' +
                 '• IP rights facilitate the free flow of information by sharing the protected know-how critical to the original, patented invention. In turn, this process leads to new innovations and improvements on existing ones.' +
@@ -349,7 +341,6 @@ const property_rights_topic: TopicStructure = {
             text: 'It’s time to consider a patent reprieve for COVID vaccines' +
                 'The pandemic is not a competition between companies and will not end without more-equal distribution of coronavirus vaccines.' +
                 '30 March 2021' +
-                '' +
                 'Agreeing temporary relief from COVID-related intellectual property would send a powerful message that richer countries and pharma companies are willing to forgo some profit for the greater good.Credit: Brian Snyder/Reuters/Alamy' +
                 'The world needs around 11 billion doses of coronavirus vaccine to immunize 70% of the world’s population, assuming two doses per person. As of last month, orders had been confirmed for 8.6 billion doses, a remarkable achievement. But some 6 billion of these will go to high- and upper-middle-income countries. Poorer nations — which account for 80% of the world’s population — so far have access to less than one-third of the available vaccines.' +
                 'One reason for this imbalance is that wealthier countries have been able to place substantial advance orders with the relatively small group of companies that are making vaccines, most of which are based in richer countries. Unless manufacturing and supply can be distributed more evenly, researchers forecast that it will be at least another two years before a significant proportion of people in the lowest-income countries are vaccinated.' +
@@ -428,9 +419,7 @@ const property_rights_topic: TopicStructure = {
                 '• Call on Gavi and CEPI to attach conditions to their funding related to technology transfers; open and non-exclusive licensing; and transparent and affordable pricing, verifiable by independent third-party audits that are made public.' +
                 'To UN Organizations' +
                 '• Take measures to promote and facilitate technology transfers of any successful Covid-19 vaccine to make it as widely available as possible.' +
-                '• Take measures to ensure any successful vaccine is priced affordably and made accessible to all vulnerable populations.' +
-                ' ' +
-                ' ' +
+                '• Take measures to ensure any successful vaccine is priced affordably and made accessible to all vulnerable populations.' + 
                 'I. Introduction' +
                 'Lives on the Line' +
                 '“Fernanda” (not her real name), a nurse in her late 40s, cared for patients with Covid-19 in a government hospital in the state of Ceará, Brazil until April 2020, before authorities began redirecting patients to an isolation ward at another facility. Soon after, she tested positive for the novel coronavirus. “I have three kids, so I panicked,” she said. “How could I protect people at home? I feared that they would be infected as well.” Her husband and children experienced symptoms consistent with Covid-19 but were not able to get access to testing to confirm infection. “I’m still panicking today,” she told Human Rights Watch two months later, in mid-July 2020. “I have been extremely careful. We get very afraid of dying.” Fernanda feared more than half her co-workers had Covid-19, though not all were confirmed. “We lost colleagues. Others were intubated. It was really scary.” She said she is “praying to have a vaccine soon” as she felt, “we will only be safe with a vaccine.”[1]' +
@@ -479,7 +468,6 @@ const property_rights_topic: TopicStructure = {
                 'In addition to governments funding vaccines, many government agencies from a variety of countries have approved clinical trials for Covid-19 vaccine candidates in their countries. At time of writing, at least 34 countries were participating in clinical trials for various vaccine candidates.[56]' +
                 'Vaccine Candidates Undergoing Phase 3 Clinical Trials' +
                 '(as of October 15, 2020)*' +
-                ' ' +
                 'Developer ' +
                 'Headquarters of Developers  ' +
                 'Platform Technology ' +
@@ -628,11 +616,9 @@ const property_rights_topic: TopicStructure = {
                 'In July this year, South Africa wrote to the TRIPS Council, a body tasked with administering the treaty, raising concerns about the “legal, technical and institutional challenges in using TRIPS flexibilities,”[159] pointing out that many countries’ patent laws either do not allow for compulsory licenses or involve time-consuming processes.[160] Similar concerns were also echoed by Hu Yuan Qiong, the senior legal and policy adviser for the MSF Access Campaign.[161]' +
                 'Further, 37 governments—Australia, Canada, Iceland, Japan, New Zealand, Norway, Switzerland, the UK, the US and the 27 EU member states—have opted out of importing products manufactured using compulsory licenses under TRIPS.[162] This makes it harder for manufacturers to produce cheaper products through economies of scale, thereby undercutting the economic viability of manufacturers who produce goods under compulsory licenses. A broad range of civil society groups, including Knowledge Ecology International, MSF, and Public Citizen, have called on these governments to reverse their decision to opt out of receiving generic imports.[163]' +
                 'At time of writing, the Indian and South African governments had submitted a proposal to the TRIPS Council recommending a waiver from some provisions of the TRIPS Agreement “until widespread vaccination is in place globally, and the majority of the world’s population has developed immunity.”[164] If adopted, the proposal could enable technology transfer and widespread sharing of IP to expand access to testing, treatment, and potential vaccines needed to save lives and prevent severe illness during the Covid-19 pandemic.' +
-                ' ' +
                 'Good Practices Around Compulsory Licensing' +
                 'Since the Covid-19 pandemic began, several governments have introduced new compulsory licensing regulations.[165] According to an August 2020 report by Public Citizen, “Germany, France, Canada and Indonesia have adopted new non-voluntary patent licensing policies. Several have taken steps to license patents, with Chile and Ecuador calling for licenses and Israel issuing a license for a candidate COVID-19 treatment.”[166]' +
                 'In the past, there have been numerous instances where governments issued compulsory licenses, including for government-use, for public health, especially for HIV/AIDS treatment. According to Ellen ’t Hoen, public health expert and founder of Medicines Patent Pool, between 2001 and 2014, at least 35 governments issued about 50 government-use licenses, mostly for specific drugs to treat HIV/AIDS.[167] In 2001, the US government threatened the pharmaceutical company Bayer with a compulsory license on ciprofloxacin (Cipro), which the government was stockpiling after letters containing anthrax spores were sent to media companies and congressional offices.[168] Bayer responded by lowering the cost of the drug significantly.[169]' +
-                ' ' +
                 'IV. Why Transparency Matters' +
                 'Transparency is so pivotal…. We need to know what bilateral deals have been made, what are the preferential terms, and if there are any equitable access terms in these agreements.… Even the poorest of poor should be able to have access to a vaccine at an affordable price.' +
                 '—Safura Abdool Karim, senior researcher and health lawyer, South African Medical Research Council’s Centre for Health Economics and Decision Science, Johannesburg, September 9, 2020' +
@@ -657,13 +643,11 @@ const property_rights_topic: TopicStructure = {
                 'Finally, “when designing a framework on intellectual property rights, consistent with the Universal Declaration of Human Rights and with the right to enjoy the benefits of scientific progress stipulated in article 15” of the ICESCR, the CESCR has warned states they should ensure intellectual property (IP) rights do not lead to denial or restriction of everyone’s access to essential medicines necessary for the enjoyment of the right to health.[194] The Committee has pointed out that states have a positive duty “to make available and accessible to all persons, without discrimination, especially to the most vulnerable, all the best available applications of scientific progress necessary to enjoy the highest attainable standard of heath.”[195]' +
                 'In 2009, a gathering of experts from United Nations bodies including the Office of the High Commissioner for Human Rights, the CESCR, the World Intellectual Property Rights Organization (WIPO), and the World Trade Organization (WTO), led by UNESCO and including other experts from academia issued the Venice Statement on the Right to Enjoy the Benefits of Scientific Progress and its Applications.[196] The Venice Statement noted, “advances in medicine have helped to cure more diseases and enhance the quality of life. However, these advances are driven primarily by market considerations that often do not correspond to the health needs of the world’s population as a whole, thus affecting the right to health.”[197] It went on to conclude “the intellectual property regime, which is a temporary monopoly with a valuable social function that should be managed in accordance with a common responsibility to prevent the unacceptable prioritization of profit for some over benefit for all.[198]' +
                 'In the context of a pandemic and in light of the requirement that states do not permit IP protections to impede realization of other economic, social, and cultural rights, such as the rights to health, this obligation should be interpreted to require states to ensure IP and licensing restrictions do not create a barrier to access health care.[199]' +
-                ' ' +
                 'VI. The Way Forward ' +
                 'The tendency to protect national interests and prioritize profit and financial interests over people’s lives … is not going to disappear. This is why we need to establish a rights-based framework that articulates why and how Covid-19 vaccines, and other medical tools to curb the pandemic, must be seen as global public goods and be made available to all people in equitable ways.' +
                 '—Fatima Hassan, South African human rights lawyer and intellectual property rights expert, and Els Torreele, access to medicine researcher and former executive director of the MSF Access Campaign, July 2020[200]' +
                 'The Covid-19 pandemic has shown that the fates of people all over the world are interconnected: protecting one country’s people and its economy from the impacts a deadly infectious disease is impossible unless the people of other countries are also protected. Governments have a critical role to play in funding efforts to develop safe and effective vaccines. But no amount of funding will guarantee equitable access without decisive collective action and global cooperation to challenge the profit-driven and opaque systems that have determined access to lifesaving treatments and vaccines in the past.' +
                 'Governments should continue to fund Covid-19 vaccines, especially to ensure access for low- and middle-income countries. While doing so, they should take all possible measures, including directing and conditioning funds in ways that are aligned with their human rights obligations to share the benefits of scientific knowledge and its applications widely, and ensure participation, transparency, and accountability in vaccine research, development, and manufacturing.' +
-                ' ' +
                 'To All Governments' +
                 '• Fund efforts to develop and manufacture Covid-19 vaccines for the world, particularly for low- and middle-income countries, including through participating in the COVAX Facility and other efforts to pool procurement and equitably allocate vaccines worldwide.' +
                 '• Commit to sharing knowledge, intellectual property (IP), and data related to Covid-19 vaccines, therapeutics, and diagnostics, by endorsing the World Health Organization’s (WHO) COVID-19 Technology Access Pool (C-TAP) and implementing the “Solidarity Call to Action to realize equitable global access to COVID-19 health technologies through pooling of knowledge, intellectual property and data.”' +
@@ -699,9 +683,7 @@ const property_rights_topic: TopicStructure = {
                 'Sarah Saadoun, senior researcher in the Business and Human Rights Division, edited the report.' +
                 'Joseph Amon, health and human rights consultant; Heather Barr, interim co-director of the Women’s Rights Division; Michael Garcia Bochenek, senior counsel to the Children’s Rights Division; and Akshaya Kumar, director of Crisis Advocacy and Special Projects reviewed and commented on the report. Aisling Reidy, senior legal adviser, provided legal review, and Babatunde Olugboji, deputy program director, provided program review.' +
                 'Production assistance was provided by Namratha Somayajula, senior associate in the Business and Human Rights Division; Fitzroy Hepkins, senior administrative manager; and Jose Martinez, administrative officer.' +
-                'Human Rights Watch gratefully acknowledges the time and insights offered by the health workers and many experts who guided our research and informed and shaped this report.' +
-                ' ' +
-                '',
+                'Human Rights Watch gratefully acknowledges the time and insights offered by the health workers and many experts who guided our research and informed and shaped this report.',
             headline: '“Whoever Finds the Vaccine Must Share It”'
         }
     }
@@ -727,8 +709,7 @@ const obesity_topic: TopicStructure = {
                 'The third reason that warrants considering obesity a disease is about access to treatments in our health care system. While we spend billions of dollars each year treating the consequences of obesity, we spend almost nothing on preventing and treating obesity itself. Whether we consider access to behavioural, medical or surgical programs for obesity, these are virtually non-existent in our health care system. Compare this to the wide range of specialized services routinely offered to patients with diabetes, heart disease or any other chronic condition (funny enough, – even smoking).' +
                 'Unfortunately, obesity continues to be viewed by governments, payers, healthcare professionals, media and the public as being largely caused by laziness and over-consumption, a stigmatizing oversimplification of a complex health problem.' +
                 'In contrast, if governments, healthcare professionals, health benefits payers, media and more individuals viewed obesity as a disease, we can perhaps create a world where health professionals are trained and remunerated for providing treatment services, where people with obesity can seek medical assistance with confidence, and where funders see the provision of obesity prevention and treatment resources and related research as a priority.' +
-                'Arya M. Sharma is Professor and Chair in Obesity Research and Management at the University of Alberta. In 2005, he spearheaded the launch of the Canadian Obesity Network. He is also Past-President of the Canadian Association of Bariatric Physicians and Surgeons. Dr. Sharma maintains a widely-read blog on obesity prevention and management. You can follow him on Twitter @DrSharma' +
-                '',
+                'Arya M. Sharma is Professor and Chair in Obesity Research and Management at the University of Alberta. In 2005, he spearheaded the launch of the Canadian Obesity Network. He is also Past-President of the Canadian Association of Bariatric Physicians and Surgeons. Dr. Sharma maintains a widely-read blog on obesity prevention and management. You can follow him on Twitter @DrSharma',
             headline: 'Why we should consider obesity a disease'
         },
         two: {
@@ -752,8 +733,7 @@ const obesity_topic: TopicStructure = {
                 'Pretending otherwise will stoke an epidemic and crush the NHS' +
                 '‘Well, what diets have you tried so far?’ asked the GP, flicking through the patient’s notes. I was an innocent trainee doctor on my general practice placement at the time and watched the interaction carefully, sensing a row was about to ensue. ‘Look, I don’t want to go on a diet, I want you to prescribe me these,’ snapped the patient, bringing out a neatly folded page she had torn out of a magazine. The GP, rolling his eyes at me, took the paper but didn’t read it. I suspected he’d read it before. This was yet another example of what’s becoming a very British epidemic: obesity being self-diagnosed as disease.' +
                 'The doctor attempted to explain that tablets really aren’t suitable in her case. As well as having some potentially nasty side effects, they’re expensive to prescribe, and don’t offer a long-term solution. This was clearly not what the woman wanted to hear. ‘Fine then, don’t help me, see if I care. I’ll get my sister to get them off her GP — he gives her whatever she wants’; and she stormed out. It struck me as bizarre that while some people using the NHS are dangerously malnourished, other people are desperate to take tablets to ensure that their food passes through their body unabsorbed, while the taxpayer foots the bill.' +
-                'It happens all the time. The patients who are not interested in changing their diet in any way, demanding to have their cake, eat it and then pop a pill so that the calories never touch their waistline. And as a result, Britain now combines austerity with obesity. The majority of us are now overweight or obese — a third of children are considered too heavy. It costs an extra £5 billion a year, and 300 hospital admissions a day are directly due to obesity.' +
-                '',
+                'It happens all the time. The patients who are not interested in changing their diet in any way, demanding to have their cake, eat it and then pop a pill so that the calories never touch their waistline. And as a result, Britain now combines austerity with obesity. The majority of us are now overweight or obese — a third of children are considered too heavy. It costs an extra £5 billion a year, and 300 hospital admissions a day are directly due to obesity.',
             headline: 'Obesity is not a disease'
         },
         two: {
@@ -774,8 +754,7 @@ const obesity_topic: TopicStructure = {
                 "What really stands out, more than the lifestyle differences, is the sharp contrast in the attitudes towards obesity between the two different eras. The 1967 survey found that nine out of ten people had attempted to lose weight in the past year, compared with barely half of adults questioned in 2010. Perhaps most tellingly though, 40 years ago only 7 per cent of those people who considered themselves overweight had failed to do anything about it, compared with nearly half now." +
                 "It would be easy to blame Britain’s fatness on lifestyle changes, but the worst of it is attitude. People just aren’t bothering to lose weight any more. Perhaps obesity is viewed as more normal. But this is also down to the attitude that we doctors increasingly encounter in our consulting rooms: the reluctance of patients to accept that ailments can be blamed on their behaviour, for which they are reluctant to take responsibility." +
                 "Patients blame obesity on the government, cunning food manufacturers, their parents and their genes. They demand fat-loss pills on the NHS and stomach-stapling surgery as a right. In a world where health care is becoming consumerised, patients see themselves as customers. There’s not much demand for hard truths." +
-                "America has severe obesity problems, and seems resigned to them. But Britain has a National Health Service, and therefore a far higher capacity to change. It ought to be easy. Doctors should be required to tell patients a blunt truth: if you’re fat, eat less, exercise more, or both. And if you keep guzzling the tasty treats, you will die earlier. It’s not a disease, it’s a mindset — and that means it can be changed. We doctors need to be a little less understanding, a little more judgmental, and realise that our oath — ‘do no harm’ — must come before our desire to save the feelings of our patients. The truth can be the hardest drug to administer. But holding our tongues, prescribing the fat pills and bankrupting the NHS in the process is the worst solution of all." +
-                "",
+                "America has severe obesity problems, and seems resigned to them. But Britain has a National Health Service, and therefore a far higher capacity to change. It ought to be easy. Doctors should be required to tell patients a blunt truth: if you’re fat, eat less, exercise more, or both. And if you keep guzzling the tasty treats, you will die earlier. It’s not a disease, it’s a mindset — and that means it can be changed. We doctors need to be a little less understanding, a little more judgmental, and realise that our oath — ‘do no harm’ — must come before our desire to save the feelings of our patients. The truth can be the hardest drug to administer. But holding our tongues, prescribing the fat pills and bankrupting the NHS in the process is the worst solution of all.",
             headline: 'Obesity Not a Disease'
         }
     }
@@ -796,26 +775,20 @@ function getSources(condition: string, taskTopic: string) {
         switch (taskTopic) {
             case 'Should students wear school uniform?':
                 return students_topic[condition]
-                break;
             case 'Should intellectual property rights exist?':
                 return property_rights_topic[condition]
-                break;
             case 'Is Obesity a Disease?':
                 return obesity_topic[condition]
-                break;
         }
     }
     else {
         switch (taskTopic) {
             case 'Should students wear school uniform?':
                 return students_topic
-                break;
             case 'Should intellectual property rights exist?':
                 return property_rights_topic
-                break;
             case 'Is Obesity a Disease?':
                 return obesity_topic
-                break;
         }
     }
 }
