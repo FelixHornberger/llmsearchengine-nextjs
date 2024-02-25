@@ -6,6 +6,9 @@ if (!process.env.OPENAI_API_KEY) {
 
 export const runtime = "edge"
 
+// Need to rework this function after the following guide:
+// https://platform.openai.com/docs/api-reference/chat/create
+
 const handler = async (req: Request): Promise<Response> => {
   try {
     const { prompt } = (await req.json()) as {
@@ -24,7 +27,7 @@ const handler = async (req: Request): Promise<Response> => {
       top_p: 1,
       frequency_penalty: 0,
       presence_penalty: 0,
-      max_tokens: 2000,
+      // max_tokens: 10000,
       stream: true,
       n: 1,
     };
