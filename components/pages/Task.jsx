@@ -1,4 +1,3 @@
-import SelectedTaskBox from '@/components/SelectedTaskBox'
 import ChatInput from "@/components/chatSystem/ChatInput";
 import Message from "@/components/chatSystem/Message";
 import { useMessageStore } from '@/src/message';
@@ -6,19 +5,21 @@ import { useEffect, useRef } from 'react';
 import { useTaskTopicStore } from '@/src/tasktopic';
 
 
-//TODO: ADD Condition
-
-function Task({ }) {
+function Task() {
     const { messages } = useMessageStore();
     const chatMessagesRef = useRef(null);
     const taskTopic = useTaskTopicStore();
 
+    // The scroll Function comes from the following post of stackoverflow:
+    // https://stackoverflow.com/a/52266212
+    const scrollToBottom = () => {
+        chatMessagesRef.current?.scrollIntoView({ behavior: "smooth" })
+    }
+
     useEffect(() => {
-        if (chatMessagesRef.current) {
-            // chatMessagesRef.current.style.height = '500px';
-            chatMessagesRef.current.scrollTop = chatMessagesRef.current.scrollHeight;
-        }
+        scrollToBottom()
     }, [messages]);
+
     return (
         <div id='task-root' className="flex-col flex w-full min-h-[100vh]">
             <div className='flex-1 overflow-hidden'>
@@ -32,10 +33,11 @@ function Task({ }) {
                             </div>
                             <div className="flex w-full sm:w-[70%] p-2 h-full m-auto overflow-hidden self-center w-128 mt-[40px]">
                                 <div className="w-full h-full">
-                                    <div className="overflow-y-scroll overflow-x-hidden p-2.5 break-words" id="chat-messages" ref={chatMessagesRef}>
+                                    <div className="overflow-y-scroll overflow-x-hidden p-2.5 break-words" id="chat-messages">
                                         {messages.map((message) => (
                                             <Message key={message.id} id={message.id} user={message.user} message={message.content} />
                                         ))}
+                                        <div ref={chatMessagesRef}/>
                                     </div>
                                 </div>
                             </div>
