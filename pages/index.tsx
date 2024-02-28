@@ -8,36 +8,41 @@ import PreTask from "@/components/pages/PreTask";
 import PostStudy from "@/components/pages/PostStudy";
 import EndPage from "@/components/pages/EndPage";
 import TaskDescription from "@/components/pages/TaskDescription";
+import InformedConsent from "@/components/pages/InformedConsent";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 
   const { page } = usePageStore();
+  // There is a need to refactor the old files like intro.js, pretask.jsx and task.jsx to tsx and change the type of the elementToReturn to jsx
   let elementToReturn: JSX.Element | null = null;
   switch (page) {
     case 0:
-      elementToReturn = <IntroPage nextPage={undefined} addTime={undefined} />;
+      elementToReturn = <IntroPage />;
       break;
     case 1:
-      elementToReturn = <PreStudy />
+      elementToReturn = <InformedConsent/>;
       break;
     case 2:
-      elementToReturn = <PreTask />;
+      elementToReturn = <PreStudy />
       break;
     case 3:
-      elementToReturn = <TaskDescription />
+      elementToReturn = <PreTask />;
       break;
     case 4:
-      elementToReturn = <Task />
+      elementToReturn = <TaskDescription />
       break;
     case 5:
-      elementToReturn = <PostTask />
+      elementToReturn = <Task />
       break;
     case 6:
-      elementToReturn = <PostStudy />
+      elementToReturn = <PostTask />
       break;
     case 7:
+      elementToReturn = <PostStudy />
+      break;
+    case 8:
       elementToReturn = <EndPage />
       break;
   }

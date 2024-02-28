@@ -18,6 +18,7 @@ interface TimeDataState {
 export const useTimeDataStore = create<TimeDataState>()((set) => ({
     timeData: {
         start: '',
+        informationConsent: '',
         preStudy: '',
         preTask: '',
         taskDescription:'',
