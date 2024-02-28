@@ -88,7 +88,7 @@ const students_topic: TopicStructure = {
             headline: 'Why do children have to wear school uniforms?'
         }
     },
-    contra: {
+    con: {
         one: {
             link: 'https://www.theguardian.com/commentisfree/2020/sep/05/britain-school-uniform-reinforces-social-divisions-children',
             text: 'Britain\'s obsession with school uniform reinforces social divisions | Rhiannon Lucy Cosslett' +
@@ -332,7 +332,7 @@ const property_rights_topic: TopicStructure = {
             headline: 'IP Basics'
         }
     },
-    contra: {
+    con: {
         one: {
             link: 'https://www.nature.com/articles/d41586-021-00863-w',
             text: 'It’s time to consider a patent reprieve for COVID vaccines' +
@@ -463,7 +463,7 @@ const obesity_topic: TopicStructure = {
             headline: 'Call Obesity What It Is: a Disease'
         }
     },
-    contra: {
+    con: {
         one: {
             link: 'https://www.medpagetoday.com/meetingcoverage/ama/39918',
             text: 'Obesity is not a disease' +
@@ -540,5 +540,5 @@ export function generatePrompt(userInput: string, taskTopic: string, condition: 
         }
     }
     prompt += ' This is the prompt of the user: ' + userInput;
-    return prompt += 'Please proceed with answering the question as described above, adhering to the guidelines , comprehensive reporting and referencing . Please cite all arguments with the given sources. The information should be structured as follows: an short answer to the query of the use, a detailed body to underline the answer given. Include links to all sources at the end for further reading."'
+    return prompt += 'Please proceed with answering the question as described above, adhering to the guidelines , comprehensive reporting and referencing .Please cite all arguments with the given sources. The information should be structured as follows: an short answer to the query of the use, a detailed body to underline the answer given. Include links to all sources at the end for further reading."'
 }
