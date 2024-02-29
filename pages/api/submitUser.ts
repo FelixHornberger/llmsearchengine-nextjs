@@ -1,21 +1,5 @@
 // TODO: Logic for submitting User
 /* Neds to hand over:
-    // Personal:
-    - ParticipantID (Need to implement this first :/) aka UUID
-    - Age -> integer
-    - Gender -> string
-    - LevelOfEducation -> string
-    - Occupation -> string
-    - argumentsBevor -> string
-    - argumentsAfter -> string
-    - messages (This should probably be it own table due to design of messages)
-    - tasktopic
-    - time stamps (We could this also turn in its own table)
-    - topicgrades (This should also be its own table or its own values)
-    - condition
-    - mildness (This is good so we can keep track of the users we actually need) boolean
-    - date (This only contains the date of submission)
-
     Code used for table creation:
     CREATE TABLE Participants (
     participant_id INT PRIMARY KEY NOT NULL,
@@ -26,16 +10,66 @@
     argumentsBefore TEXT NOT NULL,
     argumentsAfter TEXT NOT NULL,
     taskTopic VARCHAR(255) NOT NULL,
+    topicGrading TEXT NOT NULL,
     timestamps TEXT NOT NULL,
     condition VARCHAR(255) NOT NULL,
     mildness BOOLEAN NOT NULL,
     dateOfSubmission DATE NOT NULL);
-
-    CREATE TABLE Messages (
-    id INT PRIMARY KEY NOT NULL,
-    participant_id INT NOT NULL REFERENCES Participants(participant_id),
-    message_id INT NOT NULL,
-    userName VARCHAR(255) NOT NULL,
-    content TEXT NOT NULL,
-    timestamp TEXT NOT NULL);
 */
+
+import { NextApiRequest, NextApiResponse } from 'next';
+import { Pool } from 'pg';
+
+
+// This should probably be its own file later
+const pool = new Pool({
+    user: process.env.POSTGRES_USER,
+    host: process.env.POSTGRES_HOST,
+    database: process.env.POSTGRES_DATABASE,
+    password: process.env.POSTGRES_PASSWORD,
+    port: 5432,
+    connectionString: process.env.POSTGRES_URL,
+    ssl: { rejectUnauthorized: false },
+});
+
+
+// We could have an big issue with an bad Actor try to enforce an SQL-Injection this could fuck us pretty hard, we should think over an solution for this before setting live.
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+    if (req.method === 'POST') {
+        const { participant_id, age, gender, levelOfEducation, occupation, argumentsBefore, argumentsAfter, taskTopic, topicGrading, timestamps, condition, mildness, dateOfSubmission}: 
+        {
+            participant_id: string,
+            age: number,
+            gender: string,
+            levelOfEducation: string,
+            occupation: string,
+            argumentsBefore: string,
+            argumentsAfter: string,
+            taskTopic: string,
+            topicGrading: string,
+            timestamps: string, 
+            condition: string, 
+            mildness: boolean, 
+            dateOfSubmission: string | Date // I am not sure what type suits better
+        } = req.body;
+        try {
+            const client = await pool.connect();
+
+            await client.query(`INSERT INTO Participants (participant_id, age, gender, levelOfEducation, occupation, argumentsBefore, argumentsAfter, taskTopic, topicGrading, timestamps, condition, mildness, dateOfSubmission)
+                                VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)`,
+                                [participant_id, age, gender, levelOfEducation, occupation, argumentsBefore, argumentsAfter, taskTopic, topicGrading, timestamps, condition, mildness, dateOfSubmission])
+            
+            client.release();
+            res.status(201).json({message: 'Participant inserted succesfully '});
+        } catch (error) {
+            console.error('Error executing query:', error);
+            res.status(500).json({ error: 'Internal Server Error' });
+        }
+    } else {
+        res.setHeader('Allow', ['POST']);
+        res.status(405).end(`Method ${req.method} Not Allowed`);
+    }
+    
+};
+
+export default handler;
