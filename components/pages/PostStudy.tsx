@@ -10,31 +10,34 @@ import AgeInput from "../demographics/AgeInput";
 
 export default function PostStudy() {
     return (
-        <div className="text-center px-5">
-            <p className="mb-3">
-                Thank you for your work so far. For the last step all you have to do is
-                answer some question pretaining to your personal demographics.
-            </p>
-            <div className="mb-3">
-                <p>How old are you?</p>
-                <AgeInput></AgeInput>
-            </div>
-            <div className="mb-3">
-                <p> What gender do you identify with? </p>
-                <Gender></Gender>
-            </div>
-            <div className="mb-3">
-                <p>What&apos;s your highest level of education&apos;</p>
-                <Education></Education>
-            </div>
-            <div className="mb-3">
-                <p>
-                    What&apos;s your current occupation? (e.g.: if you are currently studying
-                    at a university insert &apos;Student&apos;)
+        <div className="flex flex-col">
+            <div className="flex-coloum sm:justify-center sm:place-self-center p-2 text-center sm:w-[50%]">
+                <p className="mb-3">
+                    Thank you for your work so far. For the last step all you have to do is
+                    answer some question pretaining to your personal demographics.
                 </p>
-                <Occupation></Occupation>
+                <div className="mb-3 text-left">
+                    <p>How old are you?</p>
+                    <AgeInput></AgeInput>
+                </div>
+                <div className="mb-3 text-left">
+                    <p> What gender do you identify with? </p>
+                    <Gender></Gender>
+                </div>
+                <div className="mb-3 text-left">
+                    <p>What&apos;s your highest level of education&apos;</p>
+                    <Education></Education>
+                </div>
+                <div className="mb-3 text-left">
+                    <p>
+                        What&apos;s your current occupation? (e.g.: if you are currently studying
+                        at a university insert &apos;Student&apos;)
+                    </p>
+                    <Occupation></Occupation>
+                </div>
+                <SubmitButton></SubmitButton>
             </div>
-            <SubmitButton></SubmitButton>
         </div>
+        
     );
 };
