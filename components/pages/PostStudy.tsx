@@ -31,13 +31,12 @@ export default function PostStudy() {
                 <div className="mb-3 text-left">
                     <p>
                         What&apos;s your current occupation? (e.g.: if you are currently studying
-                        at a university insert &apos;Student&apos;)
+                        at a university insert &apos;Student&apos;) (Please enter &apos;Student&apos; if you need the VP hours)
                     </p>
                     <Occupation></Occupation>
                 </div>
                 <SubmitButton></SubmitButton>
             </div>
         </div>
-        
     );
 };
