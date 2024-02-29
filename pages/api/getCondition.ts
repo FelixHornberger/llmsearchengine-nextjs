@@ -3,7 +3,7 @@
 // Through the usage of typescript you need also to install: npm install --save @types/pg
 
 import { NextApiRequest, NextApiResponse } from 'next';
-import { Pool, QueryResult } from 'pg';
+import { Pool } from 'pg';
 
 const pool = new Pool({
   user: process.env.POSTGRES_USER,
