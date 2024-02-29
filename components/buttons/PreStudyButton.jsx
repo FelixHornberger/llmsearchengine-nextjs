@@ -6,7 +6,7 @@ import { selectTask } from "@/utils/selecttasktopic";
 import { useTaskTopicStore } from '@/src/tasktopic';
 import { useTimeDataStore } from '@/src/time';
 import { useState } from 'react';
-import PreStudyUserFeedback from '../PreStudyUserFeedback';
+import UserFeedback from '../UserFeedback';
 import { useConditionStore } from '@/src/condition';
 
 // This could be its own file!
@@ -81,7 +81,7 @@ export default function PreStudyButton() {
   // This Button needs changes. wraps the row instead of
   return (
     <div className='felx-col text-center'>
-      {showUserFeedback && <PreStudyUserFeedback />}
+      {showUserFeedback && <UserFeedback feedbackText='You cannot go to the next page without having stated all topics'/>}
       <button onClick={() => handleClick()} className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3">
         Continue
       </button>
