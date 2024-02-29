@@ -6,12 +6,16 @@ export default function AgeInput() {
 
     // Solution for checking if InputIsNumber is from stackoverflow:
     // https://stackoverflow.com/a/65138192 -> Replaced the Depracted Method with the new one -> OnKeyDown
+    // This solution didnt allow the usage of the deletekey thats why i modified it.
 
     return (
-        <input type="number" className="h-6 w-full text-custom-accent-text" onChange={(e) => setAge(e.target.value)} onKeyDown={(event) => {
-            if (!/[0-9]/.test(event.key)) {
-              event.preventDefault();
+        <input type="text" className="h-6 w-full text-custom-accent-text" onChange={(e) => setAge(e.target.value)} onKeyDown={(event) => {
+            console.log("Event-key: ", event.key)
+            if (event.key !== 'Backspace') {
+                if (!/[0-9]/.test(event.key)) {
+                    event.preventDefault();
+                }
             }
-          }} placeholder="e.g.18" id="age"></input>
+        }} placeholder="e.g.18" id="age"></input>
     );
 }
