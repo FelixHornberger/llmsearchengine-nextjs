@@ -70,10 +70,10 @@ export default function PreStudyButton() {
         const data = await response.json();
         // Todo make this look smoother.
         setCondition(returnCondition(data.conditions[0]['condition_counts']))
-        nextPage(1);
       } catch (error) {
         console.error('Error fetching data:', error.message);
       }
+      nextPage(1);
     } else {
       setVisbility(true);
     }
