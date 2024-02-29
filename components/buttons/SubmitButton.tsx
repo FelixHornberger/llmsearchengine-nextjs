@@ -24,11 +24,7 @@ export default function SubmitButton() {
     occupation = occupation.toLocaleLowerCase();
 
     const handleclick = () => {
-        // fill in validate logic and create a feedback for the user that only numbers are accepted as value at the value age;
-        if (isNaN(Number(ageStore.age))) {
-            console.log("TEST")
-        }
-
+        
         if (occupation.includes('student')) {
             setVP(true);
         }
