@@ -20,7 +20,7 @@ export default function PostTask() {
             <h1 >Please state to which degree you agree or disagree with the following topic</h1>
             <SelectedTaskBox topic={taskTopic['taskTopic']} />
             <Likertscale topic={taskTopic['taskTopic']} valuation={true} />
-            <div className="flex justify-center mt-5">
+            <div className="flex justify-center mt-5 mb-2.5">
                 <div className="flex flex-col w-full border px-5 pb-5 pt-2">
                     <h2 className="mb-3">In the beginning you gave the following explanation regarding your stance on the topic:</h2>
                     <span id="prev-arguments" className="m-px break-words text-base" dangerouslySetInnerHTML={{ __html: formattedMessage }}></span>
