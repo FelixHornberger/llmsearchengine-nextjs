@@ -10,7 +10,6 @@ export default function AgeInput() {
 
     return (
         <input type="text" className="h-6 w-full text-custom-accent-text" onChange={(e) => setAge(e.target.value)} onKeyDown={(event) => {
-            console.log("Event-key: ", event.key)
             if (event.key !== 'Backspace') {
                 if (!/[0-9]/.test(event.key)) {
                     event.preventDefault();
