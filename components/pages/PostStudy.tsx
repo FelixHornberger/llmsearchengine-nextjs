@@ -25,7 +25,7 @@ export default function PostStudy() {
                     <Gender></Gender>
                 </div>
                 <div className="mb-3 text-left">
-                    <p>What&apos;s your highest level of education&apos;</p>
+                    <p>What&apos;s your highest level of education?</p>
                     <Education></Education>
                 </div>
                 <div className="mb-3 text-left">
