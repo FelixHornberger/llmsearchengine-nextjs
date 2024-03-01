@@ -19,7 +19,6 @@ import { useConditionStore } from "@/src/condition";
 function ChatInput() {
     const [loading, setLoading] = useState(false);
     const [generatedAnswers, setGeneratedAnswers] = useState<String>('');
-    // const [generatedAnswers2, setGeneratedAnswers2] = useState<String>('');
     const [showButton, setVisbility] = useState(false);
     const [counterChat, setCounterChat] = useState(0);
     const addMessageZustand = useMessageStore((state) => state.addMessage);
@@ -28,7 +27,6 @@ function ChatInput() {
     const condition = useConditionStore();
     const taskTopic = useTaskTopicStore();
 
-    // TODO: Need to add a costume script for the prompts
     const generateAnswer = async (e: any, prompt: string) => {
         e.preventDefault();
         setGeneratedAnswers("");
@@ -52,8 +50,6 @@ function ChatInput() {
             return;
         }
         let currentID = counterChat + 1;
-        /* console.log("currentId: ", currentID)
-        console.log("prompt: ", prompt) */
         let updateCounter = 0
         let update_string = ""
         const onParseGPT = (event: ParsedEvent | ReconnectInterval) => {
@@ -61,7 +57,6 @@ function ChatInput() {
                 const data = event.data;
                 try {
                     const text = JSON.parse(data).text ?? '';
-                    console.log(text)
                     setGeneratedAnswers((prev) => prev + text);
                     update_string += text
                     if (updateCounter === 0) {
@@ -71,7 +66,6 @@ function ChatInput() {
                         console.log(`My Id is: ${currentID}, user is System, content is: ${generatedAnswers}`); */
                         updateMessage({ id: currentID, user: "System", content: update_string as string, timestamp: new Date().toLocaleTimeString() })
                     }
-                    console.log("Schau mal", generatedAnswers)
                     updateCounter++;
                 } catch (e) {
                     console.error(e);
@@ -95,7 +89,6 @@ function ChatInput() {
         if (event.key === 'Enter' && !event.shiftKey) {
             const messageText = event.currentTarget.value.trim();
             if (messageText !== '') {
-                console.log(messageText);
                 addMessageZustand({
                     id: counterChat,
                     user: "User",
@@ -104,15 +97,6 @@ function ChatInput() {
                 }
                 );
                 event.currentTarget.value = '';
-                // let longMessage = "This is a pretty long message..........................................................................................................................You see?"
-                // addMessageZustand({
-                //     id: counterChat,
-                //     user: "System",
-                //     content: longMessage,
-                //     timestamp: new Date().toLocaleTimeString()
-                // }
-                // );
-                // setVisbility(true);
                 if (counterChat === 0) {
                     generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, null));
                 } else {
