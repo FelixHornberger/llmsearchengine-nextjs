@@ -1,7 +1,7 @@
 /*
 CREATE TABLE Messages (
-    id INT PRIMARY KEY NOT NULL,
-    participant_id INT NOT NULL REFERENCES Participants(participant_id),
+    id SERIAL PRIMARY KEY,
+    participant_id UUID NOT NULL REFERENCES Participants(participant_id),
     message_id INT NOT NULL,
     userName VARCHAR(255) NOT NULL,
     content TEXT NOT NULL,
@@ -41,7 +41,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
             // Loop through all messages and insert them accordingly.
             for (const message of messages) {
-                await client.query(`INSERT INTO Messages (participant_id, id, user, content, timestamp)
+                await client.query(`INSERT INTO Messages (participant_id, message_id, userName, content, timestamp)
                                     VALUES ($1, $2, $3, $4, $5)`,
                                     [participant_id, message.id, message.user, message.content, message.timestamp])
             }
