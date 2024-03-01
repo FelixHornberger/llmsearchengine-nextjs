@@ -331,7 +331,9 @@ export function generatePrompt(userInput: string, taskTopic: string, condition: 
     prompt = prompt.replace('$SOURCES$', JSON.stringify(getSources(condition, taskTopic)))
     if (messages !== null) {
         prompt += ' The following is the chat history:'
-        for (let message of messages) {
+        const startIndex = Math.max(0, messages.length - 6);
+        for (let i = startIndex; i < messages.length; i++) {
+            const message = messages[i];
             prompt += ` ${message['user']}: ${message['content']} date of message: ${message['timestamp']}`;
         }
     }
