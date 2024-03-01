@@ -10,11 +10,11 @@ export default function Education() {
             <option disabled selected>
                 Select an option
             </option>
-            <option id="placeholder">less than high school</option>
-            <option id="placeholder">high school</option>
-            <option id="placeholder">bachelor</option>
-            <option id="placeholder">master</option>
-            <option id="placeholder">doctorate</option>
+            <option id="placeholder">Less than high school</option>
+            <option id="placeholder">High school</option>
+            <option id="placeholder">Bachelor</option>
+            <option id="placeholder">Master</option>
+            <option id="placeholder">Doctorate</option>
             <option id="none">Don&apos;t want to specify</option>
         </select>);
 }
