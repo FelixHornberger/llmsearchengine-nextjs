@@ -61,7 +61,7 @@ export default function SubmitButton() {
                     "timestamps": timeData,
                     "condition": condition,
                     "mildness": mildness,
-                    "dateOfSubmission": new Date().toDateString()
+                    "dateOfSubmission": new Date()
                 }),
             });
 
@@ -86,7 +86,6 @@ export default function SubmitButton() {
             if (occupation.toLocaleLowerCase().includes('student')) {
                 setVP(true);
             }
-            setTime({ postStudy: new Date().toLocaleTimeString() });
             submitData();
             nextPage(1);
         } else {

@@ -7,7 +7,6 @@ interface TimeData {
     taskDescription: string;
     task: string;
     postTask: string;
-    postStudy: string;
 }
 
 interface TimeDataState {
@@ -24,7 +23,6 @@ export const useTimeDataStore = create<TimeDataState>()((set) => ({
         taskDescription:'',
         task: '',
         postTask: '',
-        postStudy: '',
     },
     setTimeData: (newValue: any) =>
       set((state) => ({

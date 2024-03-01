@@ -50,7 +50,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             timestamps: string, 
             condition: string, 
             mildness: boolean, 
-            dateOfSubmission: string | Date // I am not sure what type suits better
+            dateOfSubmission: Date 
         } = req.body;
 
         let participant_id = uuidv4();
