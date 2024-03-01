@@ -2,7 +2,7 @@
 /* Neds to hand over:
     Code used for table creation:
     CREATE TABLE Participants (
-    participant_id INT PRIMARY KEY NOT NULL,
+    participant_id UUID PRIMARY KEY NOT NULL,
     age INT NOT NULL,
     gender VARCHAR(255) NOT NULL,
     levelOfEducation TEXT NOT NULL,
@@ -19,6 +19,7 @@
 
 import { NextApiRequest, NextApiResponse } from 'next';
 import { Pool } from 'pg';
+import { v4 as uuidv4 } from 'uuid';
 
 
 // This should probably be its own file later
@@ -36,9 +37,8 @@ const pool = new Pool({
 // We could have an big issue with an bad Actor try to enforce an SQL-Injection this could fuck us pretty hard, we should think over an solution for this before setting live.
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     if (req.method === 'POST') {
-        const { participant_id, age, gender, levelOfEducation, occupation, argumentsBefore, argumentsAfter, taskTopic, topicGrading, timestamps, condition, mildness, dateOfSubmission}: 
+        const {age, gender, levelOfEducation, occupation, argumentsBefore, argumentsAfter, taskTopic, topicGrading, timestamps, condition, mildness, dateOfSubmission}: 
         {
-            participant_id: string,
             age: number,
             gender: string,
             levelOfEducation: string,
@@ -52,15 +52,23 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             mildness: boolean, 
             dateOfSubmission: string | Date // I am not sure what type suits better
         } = req.body;
-        try {
-            const client = await pool.connect();
 
+        let participant_id = uuidv4();
+
+        try {
+
+            const client = await pool.connect();
+            // Here we check if the uuid is already in the table if thats the case we generate a new uuid
+            const participantExists = await client.query('SELECT COUNT(*) FROM Participants WHERE participant_id = $1', [participant_id]);
+            if (participantExists.rows[0].count > 0) {
+                participant_id = uuidv4();
+            }
             await client.query(`INSERT INTO Participants (participant_id, age, gender, levelOfEducation, occupation, argumentsBefore, argumentsAfter, taskTopic, topicGrading, timestamps, condition, mildness, dateOfSubmission)
                                 VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)`,
                                 [participant_id, age, gender, levelOfEducation, occupation, argumentsBefore, argumentsAfter, taskTopic, topicGrading, timestamps, condition, mildness, dateOfSubmission])
             
             client.release();
-            res.status(201).json({message: 'Participant inserted succesfully '});
+            res.status(201).json({message: 'Participant inserted succesfully', participant_id});
         } catch (error) {
             console.error('Error executing query:', error);
             res.status(500).json({ error: 'Internal Server Error' });
