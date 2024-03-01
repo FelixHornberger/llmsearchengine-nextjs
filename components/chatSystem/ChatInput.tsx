@@ -86,27 +86,29 @@ function ChatInput() {
     };
 
     const handleKeyDown = (event: KeyboardEvent<HTMLTextAreaElement>): void => {
-        if (event.key === 'Enter' && !event.shiftKey) {
-            const messageText = event.currentTarget.value.trim();
-            if (messageText !== '') {
-                addMessageZustand({
-                    id: counterChat,
-                    user: "User",
-                    content: messageText,
-                    timestamp: new Date().toLocaleTimeString()
+        if (!loading){
+            if (event.key === 'Enter' && !event.shiftKey) {
+                const messageText = event.currentTarget.value.trim();
+                if (messageText !== '') {
+                    addMessageZustand({
+                        id: counterChat,
+                        user: "User",
+                        content: messageText,
+                        timestamp: new Date().toLocaleTimeString()
+                    }
+                    );
+                    event.currentTarget.value = '';
+                    if (counterChat === 0) {
+                        generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, null));
+                    } else {
+                        generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, messages.messages));
+                    }
+    
+                    if (!showButton) {
+                        setVisbility(true);
+                    } 
+                    setCounterChat(counterChat + 2);
                 }
-                );
-                event.currentTarget.value = '';
-                if (counterChat === 0) {
-                    generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, null));
-                } else {
-                    generateAnswer(event, generatePrompt(messageText, taskTopic.taskTopic, condition.condition, messages.messages));
-                }
-
-                if (!showButton) {
-                    setVisbility(true);
-                } 
-                setCounterChat(counterChat + 2);
             }
         }
     }
