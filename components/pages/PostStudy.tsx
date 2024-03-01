@@ -4,10 +4,6 @@ import Education from "../demographics/Education";
 import Gender from "../demographics/Gender";
 import AgeInput from "../demographics/AgeInput";
 
-// TODO: Submission needs to return Date by Input of Matrikelnummer
-// TODO: Add for every Input a Zustand
-// Refactor every input component to a client side component
-
 export default function PostStudy() {
     return (
         <div className="flex flex-col">
