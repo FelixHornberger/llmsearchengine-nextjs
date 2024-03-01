@@ -6,6 +6,9 @@ if (!process.env.OPENAI_API_KEY) {
 
 export const runtime = "edge"
 
+// This code is from:
+// https://github.com/Nutlope/twitterbio
+
 // Need to rework this function after the following guide:
 // https://platform.openai.com/docs/api-reference/chat/create
 
