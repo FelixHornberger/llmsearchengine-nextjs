@@ -4,6 +4,9 @@ import {
   ReconnectInterval,
 } from "eventsource-parser";
 
+// This Code comes froms:
+// https://github.com/Nutlope/twitterbio
+
 export type ChatGPTAgent = "user" | "system";
 
 export interface ChatGPTMessage {
