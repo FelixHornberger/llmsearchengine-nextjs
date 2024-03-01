@@ -27,7 +27,7 @@ export default function PostTaskButton() {
         <>
             {showUserFeedback && <PostTaskUserFeedback />}
             <div>
-                <button className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3" onClick={() => handleClick()}>Continue</button>
+                <button className="bg-custom-accent p-2 text-custom-accent-text font-semibold my-3" onClick={() => handleClick()}>Continue</button>
             </div>
         </>
     )

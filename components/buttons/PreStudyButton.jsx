@@ -80,7 +80,7 @@ export default function PreStudyButton() {
   }
   
   return (
-    <div className='felx-col text-center'>
+    <div className='felx-col text-center mb-3'>
       {showUserFeedback && <UserFeedback feedbackText='You cannot go to the next page without having stated all topics'/>}
       <button onClick={() => handleClick()} className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3">
         Continue
