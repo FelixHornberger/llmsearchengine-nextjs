@@ -7,8 +7,9 @@ import { useTimeDataStore } from '@/src/time';
 const NextPageButton = ({timeVar, buttonText}) => {
     const nextPage = usePageStore((state) => state.increse);
     const setTime = useTimeDataStore((state) => state.setTimeData);
+
     const handleClick = () => {
-        setTime({ time_var: new Date().toLocaleTimeString() })
+        setTime({ [timeVar]: new Date().toLocaleTimeString() })
         nextPage(1);
     }
     return (
