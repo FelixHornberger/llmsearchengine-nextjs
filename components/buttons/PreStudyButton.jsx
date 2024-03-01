@@ -78,7 +78,7 @@ export default function PreStudyButton() {
       setVisbility(true);
     }
   }
-  // This Button needs changes. wraps the row instead of
+  
   return (
     <div className='felx-col text-center'>
       {showUserFeedback && <UserFeedback feedbackText='You cannot go to the next page without having stated all topics'/>}
