@@ -1,10 +1,18 @@
 import InformedConsentCheckbox from "../InformedConsentCheckbox";
 import { useICStore } from "@/src/informationconsent";
 import NextPageButton from "../buttons/NextPageButton";
+import { useEffect, useRef } from "react";
 
 export default function InformedConsent() {
 
-    const icStore = useICStore();
+    const {accept_ic} = useICStore();
+    const buttonRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (accept_ic && buttonRef.current) {
+            buttonRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [accept_ic]);
 
     return (
         <>
@@ -105,7 +113,11 @@ export default function InformedConsent() {
                 </div>
             </div>
             <InformedConsentCheckbox/>
-            {icStore['accept_ic'] && <NextPageButton timeVar={'informationConsent'} buttonText={'Next Page'}/>}
+            {accept_ic && 
+                <div ref={buttonRef}>
+                    <NextPageButton timeVar={'informationConsent'} buttonText={'Next Page'}/>
+                </div>
+            }
         </>
     );
 }
