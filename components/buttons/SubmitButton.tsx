@@ -15,6 +15,7 @@ import { useTopicGradingStore } from '@/src/topicgrades';
 import { useConditionStore } from '@/src/condition';
 import { useMildnessStore } from '@/src/mildness';
 import { useMessageStore } from '@/src/message';
+import { useSurveyIDStore } from '@/src/surveyid';
 
 export default function SubmitButton() {
 
@@ -33,8 +34,10 @@ export default function SubmitButton() {
     const { mildness } = useMildnessStore();
     const { messages } = useMessageStore();
 
-    const setVP = useVPStore((state) => state.setVP);
+    const setSurveyID = useSurveyIDStore((state) => state.setSurveyID);
+    const { surveyID } = useSurveyIDStore();
 
+    const setVP = useVPStore((state) => state.setVP);
 
     const [showUserFeedback, setVisbility] = useState(false);
 
@@ -65,14 +68,14 @@ export default function SubmitButton() {
             if (response.ok) {
                 const data = await response.json();
                 const { participant_id } = data;
-                console.log("participant_id:", participant_id)
+                setSurveyID(participant_id);
                 const responseMessages = await fetch('/api/sumbitMessages', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        participant_id,
+                        surveyID,
                         messages
                     }),
                 });
@@ -83,8 +86,8 @@ export default function SubmitButton() {
             if (occupation.toLocaleLowerCase().includes('student')) {
                 setVP(true);
             }
-            submitData();
             setTime({ postStudy: new Date().toLocaleTimeString() });
+            submitData();
             nextPage(1);
         } else {
             setVisbility(true);
@@ -93,7 +96,7 @@ export default function SubmitButton() {
     }
     return (
         <>
-            {showUserFeedback && <UserFeedback feedbackText='Bevor you can submit the data you need to fill all forms' />}
+            {showUserFeedback && <UserFeedback feedbackText='Before you can submit the data, you must complete all the forms on this page!' />}
             <button className='bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3' onClick={() => handleclick()}>Submit</button>
         </>
     );
