@@ -6,34 +6,95 @@ import { useGenderStore } from '@/src/gender';
 import { useOccupationStore } from '@/src/occupation';
 import { useVPStore } from '@/src/vp';
 import { usePageStore } from '@/src/pagecounter';
-
-// TODO: Add all zustaende, generate Userfeedback
-// AGE, Education, Gender, Occupation (Wee need to check if age is numeric)
-
+import { useState } from 'react';
+import UserFeedback from '../UserFeedback';
+import { useArgumentsBeforeStore } from '@/src/argumentbefore';
+import { useArgumentsAfterStore } from '@/src/argumentsafter';
+import { useTaskTopicStore } from '@/src/tasktopic';
+import { useTopicGradingStore } from '@/src/topicgrades';
+import { useConditionStore } from '@/src/condition';
+import { useMildnessStore } from '@/src/mildness';
+import { useMessageStore } from '@/src/message';
 
 export default function SubmitButton() {
 
     const setTime = useTimeDataStore((state) => state.setTimeData);
     const nextPage = usePageStore((state) => state.increse)
-    const ageStore = useAgeStore();
-    const educationStore = useLevelOfEducationStore();
-    const genderStore = useGenderStore();
-    const occupationStore = useOccupationStore();
+    const { age } = useAgeStore();
+    const { levelOfEducation } = useLevelOfEducationStore();
+    const { gender } = useGenderStore();
+    const { occupation } = useOccupationStore();
+    const argumentBefore = useArgumentsBeforeStore();
+    const argumentsAfter = useArgumentsAfterStore();
+    const { taskTopic } = useTaskTopicStore();
+    const { topicGrading } = useTopicGradingStore();
+    const { timeData } = useTimeDataStore();
+    const { condition } = useConditionStore()
+    const { mildness } = useMildnessStore();
+    const { messages } = useMessageStore();
+
     const setVP = useVPStore((state) => state.setVP);
-    let occupation = occupationStore['occupation'];
-    occupation = occupation.toLocaleLowerCase();
+
+
+    const [showUserFeedback, setVisbility] = useState(false);
 
     const handleclick = () => {
-        
-        if (occupation.includes('student')) {
-            setVP(true);
+
+        const submitData = async () => {
+            const response = await fetch('/api/submitUser', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    "age": age,
+                    "gender": gender,
+                    "levelOfEducation": levelOfEducation,
+                    "occupation": occupation,
+                    "argumentsBefore": argumentBefore['arguments'],
+                    "argumentsAfter": argumentsAfter['arguments'],
+                    "taskTopic": taskTopic,
+                    "topicGrading": topicGrading,
+                    "timestamps": timeData,
+                    "condition": condition,
+                    "mildness": mildness,
+                    "dateOfSubmission": new Date().toDateString()
+                }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                const { participant_id } = data;
+                console.log("participant_id:", participant_id)
+                const responseMessages = await fetch('/api/sumbitMessages', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        participant_id,
+                        messages
+                    }),
+                });
+            }
         }
 
-        setTime({ postStudy: new Date().toLocaleTimeString() });
-        nextPage(1);
-        console.log("Sumbit needs a connection to the db")
+        if (age !== '' && levelOfEducation !== '' && gender !== '' && occupation !== '') {
+            if (occupation.toLocaleLowerCase().includes('student')) {
+                setVP(true);
+            }
+            submitData();
+            setTime({ postStudy: new Date().toLocaleTimeString() });
+            nextPage(1);
+        } else {
+            setVisbility(true);
+        }
+
     }
     return (
-        <button className='bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3' onClick={() => handleclick()}>Submit</button>
+        <>
+            {showUserFeedback && <UserFeedback feedbackText='Bevor you can submit the data you need to fill all forms' />}
+            <button className='bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3' onClick={() => handleclick()}>Submit</button>
+        </>
     );
 };
