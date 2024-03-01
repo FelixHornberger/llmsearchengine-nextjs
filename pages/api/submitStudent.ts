@@ -37,7 +37,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         try {
             const client = await pool.connect();
 
-            await client.query(`INSERT INTO Credits  (participant_id, age, gender, levelOfEducation, occupation, argumentsBefore, argumentsAfter, taskTopic, topicGrading, timestamps, condition, mildness, dateOfSubmission)
+            await client.query(`INSERT INTO Credits  (id, matrikel, firstname, lastname, degreeprogramme, time)
                                 VALUES ($1, $2, $3, $4, $5)`,
                                 [matrikel, firstname, lastname, degreeProgramm, time])
 
