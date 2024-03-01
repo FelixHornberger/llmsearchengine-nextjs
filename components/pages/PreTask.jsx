@@ -30,11 +30,5 @@ function PreTask() {
     );
 }
 
-function handleClick(nextPage, setArgumentsBevorTask, addTime) {
-    const userArguments = document.getElementById('message-input');
-    setArgumentsBevorTask(userArguments.value);
-    addTime('preTaskTime');
-    nextPage();
-}
 
 export default PreTask
