@@ -75,7 +75,7 @@ export default function SubmitButton() {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        surveyID,
+                        participant_id,
                         messages
                     }),
                 });
