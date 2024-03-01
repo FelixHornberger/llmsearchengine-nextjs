@@ -144,11 +144,11 @@ const property_rights_topic: TopicStructure = {
                 '• IP-intensive industries account for over 1/3– or 38%– of total U.S. GDP.' +
                 '• These industries also have 72.5% higher output per worker than the national average, valued at $136,556 per worker.' +
                 '• IP accounts for 74% of all U.S. exports- which amounts to nearly $1 trillion.' +
-                '• The direct and indirect economic impacts of innovation are overwhelming, acounting for more than 40% of U.S. economic growth and employment.' +            
+                '• The direct and indirect economic impacts of innovation are overwhelming, acounting for more than 40% of U.S. economic growth and employment.' +
                 'Strong and Enforced Intellectual Property Rights Protect Consumers and Families' +
                 '• Strong IP rights help consumers make an educated choice about the safety, reliability, and effectiveness of their purchases.' +
                 '• Enforced IP rights ensure products are authentic, and of the high-quality that consumers recognize and expect.' +
-                '• IP rights foster the confidence and ease of mind that consumers demand and markets rely on.' +            
+                '• IP rights foster the confidence and ease of mind that consumers demand and markets rely on.' +
                 'Intellectual Property Helps Generate Breakthrough Solutions to Global Challenges' +
                 '• Nearly all of the 300 products on the World Health Organization’s Essential Drug List, which are critical to saving or improving people’s lives around the globe, came from the R&D-intensive pharmaceutical industry that depends on patent protections.' +
                 '• Innovative agricultural companies are creating new products to help farmers produce more and better products for the world’s hungry while reducing the environmental impact of agriculture.' +
@@ -299,8 +299,6 @@ interface Message {
     content: string;
     timestamp: string;
 }
-
-
 
 
 function getSources(condition: string, taskTopic: string) {
