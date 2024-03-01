@@ -1,10 +1,12 @@
 // TODO: Logic for Student submit -> Put in StudentTable -> First & Last Name, Martikelnummer email?
 /* Neds to hand over:
-    matrikel -> integer
-    firstname -> string
-    lastename -> string
-    degree programme -> string
-    time -> string // This is only the day the student participated through this it should be able to guarantee pseudonym
+    CREATE TABLE Credits (
+    id SERIAL PRIMARY KEY,
+    matrikel INT NOT NULL,
+    firstname TEXT NOT NULL,
+    lastname TEXT NOT NULL,
+    degreeprogramme TEXT NOT NULL,
+    time TEXT NOT NULL);
 */
 
 import { NextApiRequest, NextApiResponse } from 'next';
@@ -37,7 +39,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         try {
             const client = await pool.connect();
 
-            await client.query(`INSERT INTO Credits  (id, matrikel, firstname, lastname, degreeprogramme, time)
+            await client.query(`INSERT INTO Credits  (matrikel, firstname, lastname, degreeprogramme, time)
                                 VALUES ($1, $2, $3, $4, $5)`,
                                 [matrikel, firstname, lastname, degreeProgramm, time])
 
