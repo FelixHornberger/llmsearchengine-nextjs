@@ -17,7 +17,6 @@ const handler = async (req: Request): Promise<Response> => {
     const { prompt } = (await req.json()) as {
       prompt?: string;
     };
-    console.log("Test in generate.ts, ", prompt)
     if (!prompt) {
       return new Response('No prompt in the request', { status: 400 });
     }
