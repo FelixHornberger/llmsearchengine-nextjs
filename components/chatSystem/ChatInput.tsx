@@ -31,13 +31,11 @@ function ChatInput() {
         e.preventDefault();
         setGeneratedAnswers("");
         setLoading(true);
-        console.log("prompt: ", prompt)
         const response = await fetch('/api/generate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            // We need to make changes to the prompt at the moment this is just he user message but for testin its fine
             body: JSON.stringify({
                 prompt,
             }),
@@ -62,8 +60,6 @@ function ChatInput() {
                     if (updateCounter === 0) {
                         addMessageZustand({ id: currentID, user: "System", content: update_string as string, timestamp: new Date().toLocaleTimeString() })
                     } else {
-                        /* console.log("I should update");
-                        console.log(`My Id is: ${currentID}, user is System, content is: ${generatedAnswers}`); */
                         updateMessage({ id: currentID, user: "System", content: update_string as string, timestamp: new Date().toLocaleTimeString() })
                     }
                     updateCounter++;
