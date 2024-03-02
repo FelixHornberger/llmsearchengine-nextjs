@@ -11,7 +11,9 @@ const NextPageButton = ({timeVar, buttonText}) => {
     const handleClick = () => {
         setTime({ [timeVar]: new Date().toLocaleTimeString() })
         nextPage(1);
+        window.scrollTo(0, 0);
     }
+
     return (
         <div className='text-center mb-3'>
             <button className='bg-custom-accent p-2 text-custom-accent-text font-semibold' onClick={handleClick}>{buttonText}</button>
