@@ -6,15 +6,18 @@
 
 import { useTaskTopicStore } from "@/src/tasktopic";
 import TaskDescriptionButton from "../buttons/TaskDescirptionButton";
+import Checkbox from "../Checkbox";
+import { useCheckboxStore } from "@/src/checkbox";
 
 export default function TaskDescription() {
 
     const { taskTopic } = useTaskTopicStore();
+    const { accepted } = useCheckboxStore();
 
     return (
         <div className="flex flex-col text-center justify-center">
             <div className="text-center place-items-center mb-3">
-                <h1>Task</h1>
+                <h1>Task description</h1>
             </div>
             <div className="px-5 flex justify-center">
                 <div className="task-box mb-3 max-w-prose place-items-center px-5 border border-neutral-900">
@@ -23,7 +26,8 @@ export default function TaskDescription() {
                     </p>
                 </div>
             </div>
-            <TaskDescriptionButton />
+            <Checkbox checkboxText="I have read and understood the task" />
+            {accepted && <TaskDescriptionButton />}
         </div>
     );
 }

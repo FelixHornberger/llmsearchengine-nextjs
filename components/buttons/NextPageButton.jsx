@@ -2,14 +2,18 @@
 import React from 'react'
 import { usePageStore } from '@/src/pagecounter';
 import { useTimeDataStore } from '@/src/time';
+import { useCheckboxStore } from '@/src/checkbox';
 
 // At the moment only used in the intro.page -> Later we want to give it a parameter to check if it should track time. This way we can use it also for the information consent.
 const NextPageButton = ({timeVar, buttonText}) => {
     const nextPage = usePageStore((state) => state.increse);
     const setTime = useTimeDataStore((state) => state.setTimeData);
 
+    const { setAccpted } = useCheckboxStore();
+
     const handleClick = () => {
         setTime({ [timeVar]: new Date().toLocaleTimeString() })
+        setAccpted(false);
         nextPage(1);
         window.scrollTo(0, 0);
     }

@@ -1,18 +1,19 @@
-import InformedConsentCheckbox from "../InformedConsentCheckbox";
-import { useICStore } from "@/src/informationconsent";
+import InformedConsentCheckbox from "../Checkbox";
+import { useCheckboxStore } from "@/src/checkbox";
 import NextPageButton from "../buttons/NextPageButton";
 import { useEffect, useRef } from "react";
+import Checkbox from "../Checkbox";
 
 export default function InformedConsent() {
 
-    const { accept_ic } = useICStore();
+    const { accepted } = useCheckboxStore();
     const buttonRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        if (accept_ic && buttonRef.current) {
+        if (accepted && buttonRef.current) {
             buttonRef.current?.scrollIntoView({ behavior: 'smooth' });
         }
-    }, [accept_ic]);
+    }, [accepted]);
 
     return (
         <>
@@ -112,8 +113,8 @@ export default function InformedConsent() {
                     </div>
                 </div>
             </div>
-            <InformedConsentCheckbox />
-            {accept_ic &&
+            <Checkbox checkboxText="I accept the conditions"/>
+            {accepted &&
                 <div ref={buttonRef}>
                     <NextPageButton timeVar={'informationConsent'} buttonText={'Next Page'} />
                 </div>
