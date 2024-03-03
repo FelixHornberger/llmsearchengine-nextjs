@@ -9,8 +9,7 @@ export default function VPInformation() {
         <div className="flex felx-col justify-center">
             <div className="text-center sm:w-[50%] justify-center px-5">
                 <p className="mb-3">
-                    Thank you for your work so far. For the last step all you have to do is
-                    answer some question pretaining to your personal demographics.
+                    If you are a student at the University of Regensburg and need VP hours, enter your details here, otherwise you can close the page.
                 </p>
                 <div className="mb-3">
                     <p>Firstname:</p>
