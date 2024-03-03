@@ -26,7 +26,9 @@ export default function PostTask() {
                     <span id="prev-arguments" className="m-px break-words text-base overflow-y-auto max-h-60" dangerouslySetInnerHTML={{ __html: sanitizedMessage }}></span>
                 </div>
             </div>
-            <p>After having informed yourself about the topic, are there any reasons previously not mentioned? If so please explain them here:</p>
+            <p>Now that you have informed yourself about the topic, are there any reasons that have not yet been mentioned and are important to you?
+                </p><p>If so, please explain them here:
+            </p>
             <ArgumenTextarea argument={argument} changeArgument={changeArgument} />
             <PostTaskButton />
         </div>
