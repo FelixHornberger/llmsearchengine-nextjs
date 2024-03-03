@@ -5,7 +5,7 @@ import { useTaskTopicStore } from '@/src/tasktopic';
 import { useArgumentsBeforeStore } from '@/src/argumentbefore';
 import ArgumenTextarea from "@/components/ArgumenTextarea";
 import { useArgumentsAfterStore } from "@/src/argumentsafter";
-
+import * as DOMPurify from 'dompurify';
 
 export default function PostTask() {
     const argument = useArgumentsAfterStore();
@@ -13,6 +13,7 @@ export default function PostTask() {
     const argumentbefore = useArgumentsBeforeStore();
     const changeArgument = useArgumentsAfterStore((state) => state.setArgumentsAfter);
     const formattedMessage = argumentbefore['arguments'].replace(/\n/g, '<br>');
+    const sanitizedMessage = DOMPurify.sanitize(formattedMessage);
 
     return (
         <div className="flex flex-col justify-center items-center text-center px-5">
@@ -22,7 +23,7 @@ export default function PostTask() {
             <div className="flex justify-center mt-5 mb-2.5">
                 <div className="flex flex-col w-full border px-5 pb-5 pt-2">
                     <h2 className="mb-3">In the beginning you gave the following explanation regarding your stance on the topic:</h2>
-                    <span id="prev-arguments" className="m-px break-words text-base overflow-y-auto max-h-60" dangerouslySetInnerHTML={{ __html: formattedMessage }}></span>
+                    <span id="prev-arguments" className="m-px break-words text-base overflow-y-auto max-h-60" dangerouslySetInnerHTML={{ __html: sanitizedMessage }}></span>
                 </div>
             </div>
             <p>After having informed yourself about the topic, are there any reasons previously not mentioned? If so please explain them here:</p>
