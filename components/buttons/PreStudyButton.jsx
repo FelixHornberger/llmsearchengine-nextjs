@@ -27,7 +27,6 @@ function returnCondition(arr) {
 export default function PreStudyButton() {
 
   const topicGrads = useTopicGradingStore();
-  const conditionStore = useConditionStore();
   const nextPage = usePageStore((state) => state.increse);
   const setMildness = useMildnessStore((state) => state.setMildness);
   const setTaskTopic = useTaskTopicStore((state) => state.setTaskTopic);
