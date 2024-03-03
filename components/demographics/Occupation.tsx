@@ -6,7 +6,7 @@ export default function Occupation() {
     return (
         <input
             id="occupation"
-            className="h-6 w-full text-custom-accent-text"
+            className="h-6 w-full border border-custom-text"
             type="text"
             placeholder="e.g Student"
             onChange={(e) => setOccupation(e.target.value)}

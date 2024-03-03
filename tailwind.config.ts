@@ -9,11 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'custom-text': '#e1e7f2',
-        'custom-primary': '#a2b4d8',
+        'custom-text': '#050315',
+        'custom-bg': 'rgb(251, 251, 254)',
+        'custom-primary': '#2f27ce',
         'custom-secondary': '#7a333f',
-        'custom-accent': '#be9662',
+        'custom-accent': '#ac8a9e',
         'custom-accent-text': '#374151',
+        'chat-bg-user': 'rgb(30, 190, 165)',
+        'chat-bg-system': 'rgb(39, 52, 67)',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

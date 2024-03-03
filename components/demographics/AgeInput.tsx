@@ -9,7 +9,7 @@ export default function AgeInput() {
     // This solution didnt allow the usage of the deletekey thats why i modified it.
 
     return (
-        <input type="text" className="h-6 w-full text-custom-accent-text" onChange={(e) => setAge(e.target.value)} onKeyDown={(event) => {
+        <input type="text" className="h-6 w-full border-custom-text border" onChange={(e) => setAge(e.target.value)} onKeyDown={(event) => {
             if (event.key !== 'Backspace') {
                 if (!/[0-9]/.test(event.key)) {
                     event.preventDefault();

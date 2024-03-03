@@ -21,7 +21,7 @@ export default function EndPage() {
                 <h1>Thank you for participating!</h1>
             </div>
             <div className="px-5 flex justify-center">
-                <div className="task-box mb-3 max-w-prose place-items-center px-5 border border-white">
+                <div className="task-box mb-3 max-w-prose place-items-center px-5 border border-neutral-900">
                     <p className="text-padding text-center">
                         Your SurveyID is: { surveyID }
                         <br />

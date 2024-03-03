@@ -38,6 +38,6 @@ export default function SubmitVPButton() {
         submitData();
     }
     return (
-        <button className='bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3' onClick={() => handleclick()}>SubmitVP</button>
+        <button className='bg-custom-accent p-2 font-semibold mt-3' onClick={() => handleclick()}>SubmitVP</button>
     );
 };

@@ -16,7 +16,7 @@ const NextPageButton = ({timeVar, buttonText}) => {
 
     return (
         <div className='text-center mb-3'>
-            <button className='bg-custom-accent p-2 text-custom-accent-text font-semibold' onClick={handleClick}>{buttonText}</button>
+            <button className='bg-custom-accent p-2 font-semibold' onClick={handleClick}>{buttonText}</button>
         </div>
     )
 }

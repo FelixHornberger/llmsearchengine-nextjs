@@ -78,13 +78,15 @@ export default function PreStudyButton() {
       setVisbility(true);
     }
   }
-  
+
   return (
-    <div className='felx-col text-center mb-3'>
-      {showUserFeedback && <UserFeedback feedbackText='You cannot go to the next page without having stated all topics'/>}
-      <button onClick={() => handleClick()} className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3">
-        Continue
-      </button>
+    <div className='flex felx-col justify-center items-center text-center mb-3'>
+      <div>
+        {showUserFeedback && <UserFeedback feedbackText='You cannot go to the next page without having stated all topics' />}
+        <button onClick={() => handleClick()} className="bg-custom-accent p-2 font-semibold mt-3">
+          Continue
+        </button>
+      </div>
     </div>
   )
 }

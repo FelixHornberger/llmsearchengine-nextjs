@@ -16,7 +16,7 @@ const TaskButton = ({ }) => {
     }
     return (
         <div className='text-center'>
-            <button className='bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3' onClick={handleClick}>Next Page</button>
+            <button className='bg-custom-accent p-2 font-semibold mt-3' onClick={handleClick}>Next Page</button>
         </div>
     )
 }

@@ -96,7 +96,7 @@ export default function SubmitButton() {
     return (
         <>
             {showUserFeedback && <UserFeedback feedbackText='Before you can submit the data, you must complete all the forms on this page!' />}
-            <button className='bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3' onClick={() => handleclick()}>Submit</button>
+            <button className='bg-custom-accent p-2 font-semibold mt-3' onClick={() => handleclick()}>Submit</button>
         </>
     );
 };

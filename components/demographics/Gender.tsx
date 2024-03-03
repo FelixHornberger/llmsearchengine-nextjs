@@ -5,9 +5,9 @@ import { useGenderStore } from "@/src/gender";
 export default function Gender() {
     const setGender = useGenderStore((state) => state.setGender)
     return (
-        <select id="gender" className="h-6 w-full text-custom-accent-text" 
-        style={{fontFamily: "'__Inter_aaf875', '__Inter_Fallback_aaf875', sans-serif" }} 
-        onChange={(e) => setGender(e.target.value)}>
+        <select id="gender" className="h-6 w-full border border-custom-text bg-transparent"
+            style={{ fontFamily: "'__Inter_aaf875', '__Inter_Fallback_aaf875', sans-serif" }}
+            onChange={(e) => setGender(e.target.value)}>
             <option value="" disabled selected>
                 Select an option
             </option>

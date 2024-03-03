@@ -14,7 +14,7 @@ export default function TaskDescriptionButton() {
 
     return (
         <div>
-            <button className="bg-custom-accent p-2 text-custom-accent-text font-semibold mt-3" onClick={() => handleClick()}>Continue</button>
+            <button className="bg-custom-accent p-2 font-semibold mt-3" onClick={() => handleClick()}>Continue</button>
         </div>
     )
 }

@@ -27,17 +27,17 @@ function Task() {
                     <div className='w-full h-full overflow-y-auto'>
                         <div className='flex flex-col'>
                             <div className='fixed top-0 w-full h-[40px]'>
-                                <div className='flex w-full border-b bg-gray-700 justify-center text-center'>
+                                <div className='flex flex-col w-full border-b border-custom-text bg-custom-bg justify-center text-center'>
                                     <h2 className='py-2'>Topic: {taskTopic['taskTopic']}</h2>
                                 </div>
                             </div>
-                            <div className="flex w-full sm:w-[70%] p-2 h-full m-auto overflow-hidden self-center w-128 mt-[40px]">
+                            <div className="flex w-full sm:w-[70%] p-2 h-full sm:border border-custom-text m-auto overflow-hidden self-center w-128 mt-[40px]">
                                 <div className="w-full h-full">
                                     <div className="overflow-y-scroll overflow-x-hidden p-2.5 break-words" id="chat-messages">
                                         {messages.map((message) => (
                                             <Message key={message.id} id={message.id} user={message.user} message={message.content} />
                                         ))}
-                                        <div ref={chatMessagesRef}/>
+                                        <div ref={chatMessagesRef} />
                                     </div>
                                 </div>
                             </div>

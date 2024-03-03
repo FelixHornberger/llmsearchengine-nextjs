@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 
 export default function InformedConsent() {
 
-    const {accept_ic} = useICStore();
+    const { accept_ic } = useICStore();
     const buttonRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -18,7 +18,7 @@ export default function InformedConsent() {
         <>
             <h1 className="text-center mb-3">Informed Consent of Study Participation</h1>
             <div className="px-5 flex justify-center">
-                <div className="task-box mb-3 max-w-prose place-items-center px-5 border border-white text-center">
+                <div className="task-box mb-3 max-w-prose place-items-center px-5 border border-neutral-900 text-center">
                     <p>
                         You are invited to participate in the online study, which investigates behavior with a Generative (chat based)
                         Information System. The study is conducted by Noah Meißner and Felix Hornberger and supervised by Dr. David
@@ -112,10 +112,10 @@ export default function InformedConsent() {
                     </div>
                 </div>
             </div>
-            <InformedConsentCheckbox/>
-            {accept_ic && 
+            <InformedConsentCheckbox />
+            {accept_ic &&
                 <div ref={buttonRef}>
-                    <NextPageButton timeVar={'informationConsent'} buttonText={'Next Page'}/>
+                    <NextPageButton timeVar={'informationConsent'} buttonText={'Next Page'} />
                 </div>
             }
         </>
