@@ -23,7 +23,7 @@ export default function InformedConsent() {
                         You are invited to participate in the online study, which investigates behavior with a Generative (chat based)
                         Information System. The study is conducted by Noah Meißner and Felix Hornberger and supervised by Dr. David
                         Elsweiler from the University of Regensburg. The study with estimated 69 participants will take place in the
-                        period from 01.03.2024 to 08.03.2024.
+                        period from 05.03.2024 to 15.03.2024.
                     </p>
                     <p className="my-2">Please note:</p>
                     <div className="text-left">

@@ -19,7 +19,7 @@ export default function TaskDescription() {
             <div className="px-5 flex justify-center">
                 <div className="task-box mb-3 max-w-prose place-items-center px-5 border border-neutral-900">
                     <p className="text-padding text-center">
-                        The question &quot;{taskTopic}&quot; is a much-discussed topic these days, and there are many different opinions about it. You would like to find out more about the issue and understand the arguments so that you can form your own opinion. You have found this search engine and you will use the following to answer your questions.
+                        The question &quot;{taskTopic}&quot; is a much-discussed topic these days, and there are many different opinions about it. You would like to find out more about the issue and understand the arguments so that you can form your own opinion. You have found this chat based search engine and you will use the following to answer your questions.
                     </p>
                 </div>
             </div>
