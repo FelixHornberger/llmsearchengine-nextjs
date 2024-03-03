@@ -6,7 +6,7 @@ export default function DegreeProgramm() {
     return (
         <input
             id="degreeProgramm"
-            className="h-6 w-full text-custom-accent-text"
+            className="h-6 w-full border border-custom-text"
             type="text"
             placeholder="e.g Information Sience"
             onChange={(e) => setDegreeProgramm(e.target.value)}

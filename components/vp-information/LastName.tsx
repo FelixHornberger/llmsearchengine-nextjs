@@ -6,7 +6,7 @@ export default function LastName() {
     return (
         <input
             id="lastName"
-            className="h-6 w-full text-custom-accent-text"
+            className="h-6 w-full border border-custom-text"
             type="text"
             placeholder="e.g Mustermann"
             onChange={(e) => setLastName(e.target.value)}
