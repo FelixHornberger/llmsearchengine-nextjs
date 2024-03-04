@@ -13,6 +13,7 @@ const TaskButton = ({ }) => {
     const handleClick = () => {
         setTime({ task: new Date().toLocaleTimeString() });
         nextPage(1);
+        window.scrollTo(0, 0);
     }
     return (
         <div className='text-center'>
