@@ -9,20 +9,6 @@ import { useState } from 'react';
 import UserFeedback from '../UserFeedback';
 import { useConditionStore } from '@/src/condition';
 
-// This could be its own file!
-function returnCondition(arr) {
-  const [first, middle, last] = arr;
-  if (first === middle && middle === last) {
-    const randomIndex = Math.floor(Math.random() * 3);
-    return ["pro", "con", "neutral"][randomIndex];
-  } else if (first <= middle && first <= last) {
-    return "pro";
-  } else if (middle <= first && middle <= last) {
-    return "neutral";
-  } else {
-    return "con";
-  }
-}
 
 export default function PreStudyButton() {
 
