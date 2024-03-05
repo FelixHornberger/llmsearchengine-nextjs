@@ -54,7 +54,7 @@ export default function PreStudyButton() {
         }
         const data = await response.json();
         // Todo make this look smoother.
-        setCondition(returnCondition(data.conditions[0]['condition_counts']))
+        setCondition(data.condition)
       } catch (error) {
         console.error('Error fetching data:', error.message);
       }
