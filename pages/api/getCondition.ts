@@ -15,9 +15,8 @@ const pool = new Pool({
   ssl: { rejectUnauthorized: false },
 });
 
-function returnCondition(arr: Array<number>) {
-  const [first, middle, last] = arr;
-
+function returnCondition(arr: Array<string>) {
+  const [first, middle, last] = arr.map(Number);
   if (first === middle && middle === last) {
     const randomIndex = Math.floor(Math.random() * 3);
     return ["pro", "con", "neutral"][randomIndex];
@@ -30,9 +29,9 @@ function returnCondition(arr: Array<number>) {
   } else if (first === last && middle > first) {
     const randomIndex = Math.floor(Math.random() * 2);
     return ["pro", "con"][randomIndex];
-  } else if (first <= middle && first <= last) {
+  } else if (first < middle && first < last) {
     return "pro";
-  } else if (middle <= first && middle <= last) {
+  } else if (middle < first && middle < last) {
     return "neutral";
   } else {
     return "con";
@@ -50,9 +49,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                                     FROM Participants;');
     const conditions = result.rows;
 
-    client.release();
-    let condition = returnCondition(result.rows)
-
+    client.release();                          
+    let condition = returnCondition(conditions[0]['condition_counts'])
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json({ condition });
   } catch (error) {
