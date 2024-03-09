@@ -5,7 +5,7 @@ interface PageState {
     increse: (by: number) => void;
 }
 
-export const usePageStore = create<PageState>()((set) =>({
-    page: 0,
-    increse: (by) => set((state) => ({page: state.page + by}) )
+export const usePageStore = create<PageState>()((set) => ({
+    page: 8,
+    increse: (by) => set((state) => ({ page: state.page + by }))
 }))
